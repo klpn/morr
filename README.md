@@ -19,6 +19,8 @@ capatplot(1, 4290, capat)
 ## Cause definitions
 
 Causes are defined in the JSON file [conf/morr.json](inst/conf/morr.json),
+similar to the configuration for my [Mortchartgen](https://github.com/klpn/Mortchartgen.jl)
+and [MortIntl.jl](https://github.com/klpn/MortIntl.jl/) projects,
 with regular expressions for each list format, mostly corresponding to a specific
 ICD version. They will then be processed by the AWK script
 [scripts/propyrs_ctry.awk](inst/scripts/propyrs_ctry.awk).
