@@ -86,21 +86,30 @@ awsyplot <- function(caframe, rlab, ca1lab, ca2lab, fwscales) {
 }
 
 #' @export
-capatplot <- function(ag, ctry, cas) {
+capatplot <- function(ag, ctry, cas, aw = FALSE) {
     ctrylab <- ctries[[as.character(ctry)]][["name"]]
     cas.list <- list()
+    if (aw) {
+        alabs <- agelabs_w
+        agcol <- sym("age_w")
+    } else {
+        alabs <- agelabs
+        agcol <- sym("age")
+    }
     calabs <- c()
     for (cind in seq_along(cas)) {
         ca <- cas[cind]
-        cas.list[[sprintf("%02d",cind)]] <- ctry_caf(ctry, ca, "all")
+        caf <- ctry_caf(ctry, ca, "all")
+        if (aw) caf <- awjoin(caf)
+        cas.list[[sprintf("%02d",cind)]] <- caf
         calabs <- append(calabs, miconf[["causes"]][[ca]][["alias"]][["en"]])
     }
     cas.frame <- bind_rows(cas.list, .id="ca")
-    cas.frame |> filter(age == ag & sex < 9) |>
+    cas.frame |> filter(!!agcol == ag & sex < 9) |>
         ggplot(aes(x = yr, y = ca1/ca2, fill = factor(ca, labels = calabs))) +
         geom_area(col="black", alpha=0.5) +
         labs(fill = "cause", x = "year", y = "ratio",
-             title = sprintf("Causes of death %s age %s", ctrylab, agelabs[ag])) +
+             title = sprintf("Causes of death %s age %s", ctrylab, alabs[ag])) +
         facet_wrap(~factor(sex, labels = sexlabs))
 }
 
