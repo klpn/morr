@@ -5,20 +5,24 @@ BEGIN {
 	split(ca2, cas2, "!")
 }
 
-function add_age(v) {
+function add_age(v, a, s) {
         for(i=1; i<=25; i++) {
-                c = i+9
-                v[$1,$4,i,$7] += $c
+                c = i+a
+                v[$1,$4,i,$s] += $c
         }
 }
 
-$5~li && $6~cas1[1] && (length(cas1[2])==0 || $6!~cas1[2]){
-        add_age(ca1n)
+NF==39 && $5~li && $6~cas1[1] && (length(cas1[2])==0 || $6!~cas1[2]) {
+        add_age(ca1n, 9, 7)
 }
 
-$5~li && $6~cas2[1] && (length(cas2[2])==0 || $6!~cas2[2]){
-        add_age(ca2n)
+NF==39 && $5~li && $6~cas2[1] && (length(cas2[2])==0 || $6!~cas2[2]) {
+        add_age(ca2n, 9, 7)
 }
+
+NF==33 && cas2[1]=="pop" {
+        add_age(ca2n, 6, 5)
+}    
 
 END {
         for (cyragesex in ca1n) {
@@ -31,7 +35,7 @@ END {
                         yr = yassep[2]
                         age = yassep[3]
                         sex = yassep[4]
-                        printf("%d,%d,%d,%d,%d,%d,%d,%.3f\n",
+                        printf("%d,%d,%d,%d,%d,%d,%d,%f\n",
                                ctry, yr, li, age, sex, n1, n2, rat)
                 }
         }

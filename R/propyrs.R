@@ -27,7 +27,10 @@ caframe <- function(ctry, ca1, ca2) {
     for (li in names(miconf[["causes"]][[ca1]][["causeexpr"]])) {
         le <- miconf[["listexpr"]][[li]]
         ca1e <- ce.expand(miconf[["causes"]][[ca1]][["causeexpr"]][[li]], li)
-        ca2e <- ce.expand(miconf[["causes"]][[ca2]][["causeexpr"]][[li]], li)
+        if (ca2=="pop")
+            ca2e <- ca2
+        else
+            ca2e <- ce.expand(miconf[["causes"]][[ca2]][["causeexpr"]][[li]], li)
         if (ctry=="all") {
             pipestr <- sprintf("./propyrs_ctry.sh \"[0-9]\" \"%s\" \"%s\"",
                                ca1e, ca2e, le)
@@ -58,13 +61,13 @@ ctry_caf <- function(ctry, ca1, ca2) {
 }
 
 #' @export
-ctry_awsyplot <- function(ctry, ca1, ca2, minyr, maxyr) {
+ctry_awsyplot <- function(ctry, ca1, ca2, minyr, maxyr, fwscales = "fixed") {
     ctrylab <- ctries[[ctry]][["name"]]
     ca1lab <- miconf[["causes"]][[ca1]][["alias"]][["en"]]
     ca2lab <- miconf[["causes"]][[ca2]][["alias"]][["en"]]
     caframe <- ctry_caf(ctry, ca1, ca2) |>
         filter(sex < 9 & yr >= minyr & yr <= maxyr)
-    awsyplot(caframe, ctrylab, ca1lab, ca2lab, "fixed")
+    awsyplot(caframe, ctrylab, ca1lab, ca2lab, fwscales)
 }
 
 alw <- function(aw) {
@@ -86,7 +89,7 @@ awsyplot <- function(caframe, rlab, ca1lab, ca2lab, fwscales) {
 }
 
 #' @export
-capatplot <- function(ag, ctry, cas, aw = FALSE) {
+capatplot <- function(ag, ctry, cas, aw = FALSE, ca2 = "all") {
     ctrylab <- ctries[[as.character(ctry)]][["name"]]
     cas.list <- list()
     if (aw) {
@@ -99,7 +102,7 @@ capatplot <- function(ag, ctry, cas, aw = FALSE) {
     calabs <- c()
     for (cind in seq_along(cas)) {
         ca <- cas[cind]
-        caf <- ctry_caf(ctry, ca, "all")
+        caf <- ctry_caf(ctry, ca, ca2)
         if (aw) caf <- awjoin(caf)
         cas.list[[sprintf("%02d",cind)]] <- caf
         calabs <- append(calabs, miconf[["causes"]][[ca]][["alias"]][["en"]])

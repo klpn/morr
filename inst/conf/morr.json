@@ -1,5 +1,12 @@
 {
     "causes": {
+        "pop": {
+            "alias": { 
+		    "en": "population",
+		    "sv": "befolkning"
+	    },
+            "sex": [2,1]
+        },
         "all": {
             "alias": { 
 		    "en": "all causes",
