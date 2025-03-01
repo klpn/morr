@@ -100,6 +100,7 @@ capatplot <- function(ag, ctry, cas, aw = FALSE, ca2 = "all") {
         agcol <- sym("age")
     }
     calabs <- c()
+    ca2lab <- miconf[["causes"]][[ca2]][["alias"]][["en"]]
     for (cind in seq_along(cas)) {
         ca <- cas[cind]
         caf <- ctry_caf(ctry, ca, ca2)
@@ -111,7 +112,7 @@ capatplot <- function(ag, ctry, cas, aw = FALSE, ca2 = "all") {
     cas.frame |> filter(!!agcol == ag & sex < 9) |>
         ggplot(aes(x = yr, y = ca1/ca2, fill = factor(ca, labels = calabs))) +
         geom_area(col="black", alpha=0.5) +
-        labs(fill = "cause", x = "year", y = "ratio",
+        labs(fill = "cause", x = "year", y = sprintf("deaths cause/%s", ca2lab),
              title = sprintf("Causes of death %s age %s", ctrylab, alabs[ag])) +
         facet_wrap(~factor(sex, labels = sexlabs))
 }
