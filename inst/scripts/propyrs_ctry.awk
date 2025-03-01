@@ -29,14 +29,17 @@ END {
                 split(cyragesex, yassep, SUBSEP)
                 n1 = ca1n[cyragesex]
                 n2 = ca2n[cyragesex]
+		ctry = yassep[1]
+                yr = yassep[2]
+                age = yassep[3]
+                sex = yassep[4]
                 if (n2 > 0) {
                         rat = n1 / n2
-			ctry = yassep[1]
-                        yr = yassep[2]
-                        age = yassep[3]
-                        sex = yassep[4]
                         printf("%d,%d,%d,%d,%d,%d,%d,%f\n",
                                ctry, yr, li, age, sex, n1, n2, rat)
+                } else {
+                        if (n1 > 0) printf("%d,%d,%d,%d,%d,%d,,\n",
+                               ctry, yr, li, age, sex, n1)
                 }
         }
 }

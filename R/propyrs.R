@@ -11,13 +11,20 @@ cafs <- list()
 agelabs <- c("0–ω", "0", "1", "2", "3", "4",
              mapply(function(x) sprintf("%d–%d", (x-5)*5-5, (x-5)*5-1), 7:22),
              "85–89|ω", "90–94", "95–ω")
-aw <- data.frame(age = 1:25, age_w = c(1, rep(2,7), rep(3,6), 4:14))
+aw <- data.frame(age = 2:25, age_w = c(rep(2,7), rep(3,6), 4:14))
+aw0 <- data.frame(age = 2:25, age_w = 1)
 agelabs_w <- c(agelabs[1], "0–14", "15–44", agelabs[15:25])
 sexlabs <- c("men", "women")
 
 awjoin <- function(caframe) {
-     inner_join(caframe, aw) |> group_by(yr, sex, age_w) |>
-         summarise(ca1 = sum(ca1), ca2 = sum(ca2))
+    caf0 <- filter(caframe, age > 1) |>
+        mutate(ca2 = coalesce(ca2, 0), age = if_else(ca2==0 & age>23, 23, age)) |>
+        group_by(ctry, yr, sex, age) |>  summarise(ca1=sum(ca1), ca2=sum(ca2))
+    bind_rows(inner_join(caf0, aw0), inner_join(caf0, aw)) |>
+        group_by(yr, sex) |>
+        mutate(length = if_else(age==23 & age_w==1 & max(age)==23, 3, 1)) |>
+        group_by(yr, sex, age_w) |> summarise(meanrat = mean((ca1*length)/ca2),
+                                     ca1 = sum(ca1), ca2 = sum(ca2), rat = ca1/ca2)
 }
 
 caframe <- function(ctry, ca1, ca2) {
@@ -61,13 +68,13 @@ ctry_caf <- function(ctry, ca1, ca2) {
 }
 
 #' @export
-ctry_awsyplot <- function(ctry, ca1, ca2, minyr, maxyr, fwscales = "fixed") {
+ctry_awsyplot <- function(ctry, ca1, ca2, minyr, maxyr, fwscales = "fixed", ycol = "rat") {
     ctrylab <- ctries[[ctry]][["name"]]
     ca1lab <- miconf[["causes"]][[ca1]][["alias"]][["en"]]
     ca2lab <- miconf[["causes"]][[ca2]][["alias"]][["en"]]
     caframe <- ctry_caf(ctry, ca1, ca2) |>
         filter(sex < 9 & yr >= minyr & yr <= maxyr)
-    awsyplot(caframe, ctrylab, ca1lab, ca2lab, fwscales)
+    awsyplot(caframe, ctrylab, ca1lab, ca2lab, fwscales, ycol)
 }
 
 alw <- function(aw) {
@@ -78,9 +85,9 @@ alw <- function(aw) {
     }
 }
 
-awsyplot <- function(caframe, rlab, ca1lab, ca2lab, fwscales) {
+awsyplot <- function(caframe, rlab, ca1lab, ca2lab, fwscales, ycol) {
     awjoin(caframe) |>
-        ggplot(aes(x = yr, y = ca1/ca2, col = factor(sex, labels = sexlabs))) +
+        ggplot(aes(x = yr, y = !!sym(ycol), col = factor(sex, labels = sexlabs))) +
         geom_point() + geom_smooth(span = 0.3) +
         labs(col = "sex", x = "year", y = "ratio",
              title = sprintf("Deaths %s/%s %s", ca1lab, ca2lab, rlab)) +
@@ -104,13 +111,14 @@ capatplot <- function(ag, ctry, cas, aw = FALSE, ca2 = "all") {
     for (cind in seq_along(cas)) {
         ca <- cas[cind]
         caf <- ctry_caf(ctry, ca, ca2)
+        caf$rat <- caf$ca1 / caf$ca2
         if (aw) caf <- awjoin(caf)
         cas.list[[sprintf("%02d",cind)]] <- caf
         calabs <- append(calabs, miconf[["causes"]][[ca]][["alias"]][["en"]])
     }
     cas.frame <- bind_rows(cas.list, .id="ca")
     cas.frame |> filter(!!agcol == ag & sex < 9) |>
-        ggplot(aes(x = yr, y = ca1/ca2, fill = factor(ca, labels = calabs))) +
+        ggplot(aes(x = yr, y = rat, fill = factor(ca, labels = calabs))) +
         geom_area(col="black", alpha=0.5) +
         labs(fill = "cause", x = "year", y = sprintf("deaths cause/%s", ca2lab),
              title = sprintf("Causes of death %s age %s", ctrylab, alabs[ag])) +
