@@ -55,6 +55,19 @@ caframe <- function(ctry, ca1, ca2) {
     caf
 }
 
+#' Generate a data frame with cause of death ratios over time for one or more regions
+#'
+#' @description
+#' If a CSV file with matching name exists in the extdata subdirectory, it will be used.
+#' Otherwise, the result will be saved to such a file, which can be re-used to avoid
+#' the relatively computing-intensive calculations with regular expressions on the
+#' WHO data files.
+#' 
+#' @param ctry WHO region code (use "all" for all regions).
+#' @param ca1 Numerator cause.
+#' @param ca2 Denominator cause (use "pop" for population, to get death rates).
+#' @examples
+#' ctry_caf(4290, "ihd", "all")
 #' @export
 ctry_caf <- function(ctry, ca1, ca2) {
     cacomb <- sprintf("%s-%s", ca1, ca2)
@@ -71,6 +84,21 @@ ctry_caf <- function(ctry, ca1, ca2) {
     }
 }
 
+#' Plots cause of death ratios for different age groups in a region
+#' 
+#' @param ctry WHO region code (use "all" for all regions).
+#' @param ca1 Numerator cause.
+#' @param ca2 Denominator cause (use "pop" for population, to get death rates).
+#' @param minyr Minimum year to be plotted.
+#' @param maxyr Maximum year to be plotted.
+#' @param fwscales Using free or fixed scales for the plot.
+#' @param ycol Column to use for the plot. Use "meanrat" for mean of death rates over age groups.
+#' @param aws Data frame with age groups for aggregation.
+#'   The standard frame "aw" is suited for causes related to aging, with higher age groups fine-grained.
+#'   The frame "aw_y" is suited for causes commong among young adults, like HIV and external causes.
+#' @param alabs Vector with labels of the same length as the age groups.
+#' @examples
+#' ctry_awsyplot("4290", "ihd", "all", 1951, 2023)
 #' @export
 ctry_awsyplot <- function(ctry, ca1, ca2, minyr, maxyr,
                           fwscales = "fixed", ycol = "rat", aws = aw, alabs = agelabs_w) {
@@ -100,15 +128,26 @@ awsyplot <- function(caframe, rlab, ca1lab, ca2lab, fwscales, ycol, aws, alabs) 
         theme(text = element_text(size = 10))
 }
 
+#' Plots cause of death pattern for a region over time
+#' 
+#' @param ctry WHO region code (use "all" for all regions).
+#' @param cas Vector of cause codes.
+#' @param aws Data frame with age groups for aggregation.
+#'   The standard frame "aw" is suited for causes related to aging, with higher age groups fine-grained.
+#'   The frame "aw_y" is suited for causes commong among young adults, like HIV and external causes.
+#' @param alabs Vector with labels of the same length as the age groups.
+#' @param ca2 Denominator cause (use "pop" for population to get death rates).
+#' @examples
+#' capat <- c("ihd", "othhd", "othath", "othcirc", "str", "neurdegnovd", "diab",
+#' "chresp", "inf", "othdis", "illdef", "ext", "tum")
+#' capatplot(1, 4290, capat)
 #' @export
-capatplot <- function(ag, ctry, cas, aw = FALSE, ca2 = "all") {
+capatplot <- function(ag, ctry, cas, aws = NA, alabs = agelabs, ca2 = "all") {
     ctrylab <- ctries[[as.character(ctry)]][["name"]]
     cas.list <- list()
-    if (aw) {
-        alabs <- agelabs_w
+    if (is.data.frame(aws)) {
         agcol <- sym("age_w")
     } else {
-        alabs <- agelabs
         agcol <- sym("age")
     }
     calabs <- c()
@@ -117,7 +156,7 @@ capatplot <- function(ag, ctry, cas, aw = FALSE, ca2 = "all") {
         ca <- cas[cind]
         caf <- ctry_caf(ctry, ca, ca2)
         caf$rat <- caf$ca1 / caf$ca2
-        if (aw) caf <- awjoin(caf, aw)
+        if (is.data.frame(aws)) caf <- awjoin(caf, aws)
         cas.list[[sprintf("%02d",cind)]] <- caf
         calabs <- append(calabs, miconf[["causes"]][[ca]][["alias"]][["en"]])
     }
