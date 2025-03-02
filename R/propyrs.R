@@ -12,15 +12,19 @@ agelabs <- c("0–ω", "0", "1", "2", "3", "4",
              mapply(function(x) sprintf("%d–%d", (x-5)*5-5, (x-5)*5-1), 7:22),
              "85–89|ω", "90–94", "95–ω")
 aw <- data.frame(age = 2:25, age_w = c(rep(2,7), rep(3,6), 4:14))
+aw_y <- data.frame(age = 2:25,
+                   age_w = c(rep(2,7), rep(3,2), rep(4,2), rep(5,2), rep(6,4), rep(7,7)))
 aw0 <- data.frame(age = 2:25, age_w = 1)
 agelabs_w <- c(agelabs[1], "0–14", "15–44", agelabs[15:25])
+agelabs_w_y <- c(agelabs[1], "0–14", "15–24", "25–34", "35–44", "45–64", "65–ω")
 sexlabs <- c("men", "women")
 
-awjoin <- function(caframe) {
+awjoin <- function(caframe, awframe) {
     caf0 <- filter(caframe, age > 1) |>
-        mutate(ca2 = coalesce(ca2, 0), age = if_else(ca2==0 & age>23, 23, age)) |>
+        mutate(ca2 = coalesce(ca2, 0),
+               age = case_when(ca2==0 & age>23 ~ 23, ca2==0 & age<7 ~ 3, .default = age)) |>
         group_by(ctry, yr, sex, age) |>  summarise(ca1=sum(ca1), ca2=sum(ca2))
-    bind_rows(inner_join(caf0, aw0), inner_join(caf0, aw)) |>
+    bind_rows(inner_join(caf0, aw0), inner_join(caf0, awframe)) |>
         group_by(yr, sex) |>
         mutate(length = if_else(age==23 & age_w==1 & max(age)==23, 3, 1)) |>
         group_by(yr, sex, age_w) |> summarise(meanrat = mean((ca1*length)/ca2),
@@ -68,13 +72,14 @@ ctry_caf <- function(ctry, ca1, ca2) {
 }
 
 #' @export
-ctry_awsyplot <- function(ctry, ca1, ca2, minyr, maxyr, fwscales = "fixed", ycol = "rat") {
+ctry_awsyplot <- function(ctry, ca1, ca2, minyr, maxyr,
+                          fwscales = "fixed", ycol = "rat", aws = aw, alabs = agelabs_w) {
     ctrylab <- ctries[[ctry]][["name"]]
     ca1lab <- miconf[["causes"]][[ca1]][["alias"]][["en"]]
     ca2lab <- miconf[["causes"]][[ca2]][["alias"]][["en"]]
     caframe <- ctry_caf(ctry, ca1, ca2) |>
         filter(sex < 9 & yr >= minyr & yr <= maxyr)
-    awsyplot(caframe, ctrylab, ca1lab, ca2lab, fwscales, ycol)
+    awsyplot(caframe, ctrylab, ca1lab, ca2lab, fwscales, ycol, aws, alabs)
 }
 
 alw <- function(aw) {
@@ -85,13 +90,13 @@ alw <- function(aw) {
     }
 }
 
-awsyplot <- function(caframe, rlab, ca1lab, ca2lab, fwscales, ycol) {
-    awjoin(caframe) |>
+awsyplot <- function(caframe, rlab, ca1lab, ca2lab, fwscales, ycol, aws, alabs) {
+    awjoin(caframe, aws) |>
         ggplot(aes(x = yr, y = !!sym(ycol), col = factor(sex, labels = sexlabs))) +
         geom_point() + geom_smooth(span = 0.3) +
         labs(col = "sex", x = "year", y = "ratio",
              title = sprintf("Deaths %s/%s %s", ca1lab, ca2lab, rlab)) +
-        facet_wrap(scales = fwscales, ~factor(age_w, labels = alw(age_w))) +
+        facet_wrap(scales = fwscales, ~factor(age_w, labels = alabs)) +
         theme(text = element_text(size = 10))
 }
 
@@ -112,7 +117,7 @@ capatplot <- function(ag, ctry, cas, aw = FALSE, ca2 = "all") {
         ca <- cas[cind]
         caf <- ctry_caf(ctry, ca, ca2)
         caf$rat <- caf$ca1 / caf$ca2
-        if (aw) caf <- awjoin(caf)
+        if (aw) caf <- awjoin(caf, aw)
         cas.list[[sprintf("%02d",cind)]] <- caf
         calabs <- append(calabs, miconf[["causes"]][[ca]][["alias"]][["en"]])
     }
