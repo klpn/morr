@@ -5,7 +5,9 @@ for different countries, using data from
 [WHO Mortality Database](https://www.who.int/data/data-collection-tools/who-mortality-database),
 which should be downloaded an and unzipped in  `extdata`
 (`inst/extdata` when the package is developed), which can be done by
-running `../scripts/download.sh` in that directory.
+running `../scripts/download.sh` in that directory, provided that
+[curl](https://curl.se/) and [unzip](https://infozip.sourceforge.net/UnZip.html)
+are available.
 
 ## Usage examples
 
