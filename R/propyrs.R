@@ -45,11 +45,17 @@ caframe <- function(ctry, ca1, ca2) {
         if (ctry=="all") {
             pipestr <- sprintf("./propyrs_ctry.sh \"[0-9]\" \"%s\" \"%s\"",
                                ca1e, ca2e, le)
+        } else if (ctry=="SE") {
+            if (grepl("SE", li))
+                pipestr <- sprintf("./propyrs_sdb.sh \"%s\" \"%s\"", ca1e, ca2e)
+            else
+                pipestr <- NA
         } else {
             pipestr <- sprintf("./propyrs_ctry.sh %s \"%s\" \"%s\" \"%s\"",
                                ctry, ca1e, ca2e, le)
         }
-        caf <- bind_rows(caf, read.csv(pipe(pipestr)))
+        if (!is.na(pipestr))
+            caf <- bind_rows(caf, read.csv(pipe(pipestr)))
     }
     setwd(oldwd)
     caf
@@ -72,15 +78,19 @@ caframe <- function(ctry, ca1, ca2) {
 ctry_caf <- function(ctry, ca1, ca2) {
     cacomb <- sprintf("%s-%s", ca1, ca2)
     caall <- sprintf("%s-all", cacomb)
-    cafpath <- sprintf("%s/%s-%s.csv", datapath, cacomb, ctry)
+    if (grepl("SE", ctry))
+        sctry <- "SE"
+    else
+        sctry <- ctry
+    cafpath <- sprintf("%s/%s-%s.csv", datapath, cacomb, sctry)
     if (caall %in% names(cafs)) {
-        cafs[[caall]] |> filter(ctry==!!ctry)
+        cafs[[caall]] |> filter(grepl(!!ctry, ctry))
     } else if (file.exists(cafpath)) {
-        read.csv(cafpath)
+        read.csv(cafpath) |> filter(grepl(!!ctry, ctry))
     } else {
-        caf <- caframe(ctry, ca1, ca2)
+        caf <- caframe(sctry, ca1, ca2)
         write.csv(caf, cafpath, quote = FALSE, row.names = FALSE)
-        caf
+        caf |> filter(grepl(!!ctry, ctry))
     }
 }
 
