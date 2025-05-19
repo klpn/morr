@@ -769,12 +769,34 @@
                 "101": "1069"
             },
             "codedesc": {
-		    "en": "ICD-6/7: 330--334; ICD-8/9: 430--438; ICD-10: F01, I60--I69",
-		    "sv": "ICD-6/7: 330--334; ICD-8/9: 430--438; ICD-10: F01, I60--I69"
+		    "en": "ICD-6/7: 330--334; ICD-8/9: 430--438; ICD-10: I60--I69",
+		    "sv": "ICD-6/7: 330--334; ICD-8/9: 430--438; ICD-10: I60--I69"
 	    },
             "note": {
 		    "en": "Includes cerebral haemorrhage, cerebral infarction and other cerebrovascular diseases. For ICD-10 with detailed list, vascular dementia is also included.",
 		    "sv": "Inkluderar hjärnblödning, hjärninfarkt och andra sjukdomar i hjärnans blodkärl. För ICD-10 inkluderas även vaskulär demens."
+	    },
+            "sex": [2,1]
+        },
+        "strnovd": {
+            "alias": {
+		    "en": "stroke (non-VD)",
+		    "sv": "slaganfall (ej VD)"
+	    },
+            "causeexpr": {
+                "07A": "A070",
+                "08A": "A085",
+                "09B": "B29[0-9]",
+                "10":  "I6",
+                "101": "1069"
+            },
+            "codedesc": {
+		    "en": "ICD-6/7: 330--334; ICD-8/9: 430--438; ICD-10: F01, I60--I69",
+		    "sv": "ICD-6/7: 330--334; ICD-8/9: 430--438; ICD-10: F01, I60--I69"
+	    },
+            "note": {
+		    "en": "Includes cerebral haemorrhage, cerebral infarction and other cerebrovascular diseases.",
+		    "sv": "Inkluderar hjärnblödning, hjärninfarkt och andra sjukdomar i hjärnans blodkärl.."
 	    },
             "sex": [2,1]
         },
@@ -887,6 +909,24 @@
 		    "sv": "Inkluderar cancer i livmoderkropp, moderkaka eller ospecificerad del av livmoder (vilket kan inkludera en del fall av ofullständigt klassificerad cervixcancer)."
 	    },
             "sex": 2
+        },
+        "vd": {
+            "alias": {
+		    "en": "vascular dementia",
+		    "sv": "vaskulär demens"
+	    },
+            "causeexpr": {
+                "10": "F01"
+            },
+            "codedesc": {
+		    "en": "ICD-10: F01",
+		    "sv": "ICD-10: F01"
+	    },
+            "note": {
+		    "en": "Includes vascular dementia.",
+		    "sv": "Inkluderar vaskulär demens."
+	    },
+            "sex": [2,1]
         }
     },
     "listexpr": {

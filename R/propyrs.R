@@ -2,6 +2,7 @@
 #' @import dplyr
 #' @import ggplot2
 #' @import purrr
+#' @import tidyr
 
 miconf <- fromJSON(system.file("conf", "morr.json", package = "morr"))
 ctries <- fromJSON(system.file("conf", "countries.json", package = "morr"))
@@ -172,6 +173,7 @@ capatplot <- function(ag, ctry, cas, aws = NA, alabs = agelabs, ca2 = "all") {
     }
     cas.frame <- bind_rows(cas.list, .id="ca")
     cas.frame |> filter(!!agcol == ag & sex < 9) |>
+        complete(ca, yr, age, sex, fill = list(ca1 = 0, ca2 = 1, rat = 0.0)) |>
         ggplot(aes(x = yr, y = rat, fill = factor(ca, labels = calabs))) +
         geom_area(col="black", alpha=0.5) +
         labs(fill = "cause", x = "year", y = sprintf("deaths cause/%s", ca2lab),
