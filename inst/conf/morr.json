@@ -447,6 +447,28 @@
 	    },
             "sex": [2,1]
         },
+        "livd": {
+            "alias": {
+		    "en": "liver disease",
+		    "sv": "lever sjukdom"
+	    },
+            "causeexpr": {
+                "07A": "A105",
+                "08A": "A102",
+                "09B": "B347",
+                "10": "K7",
+                "101": "1080"
+            },
+            "codedesc": {
+		    "en": "ICD-7: 581, ICD-8: 571, ICD-9: 571, ICD-10: K70–K77",
+		    "sv": "ICD-7: 581, ICD-8: 571, ICD-9: 571, ICD-10: K70–K77"
+	    },
+            "note": {
+		    "en": "Cirrhosis and other diseases of the liver (excluding viral hepatitis).",
+		    "sv": "Cirros och andra leversjukdomar (ej viral hepatit)."
+	    },
+            "sex": [2,1]
+        },
         "respinf": {
             "alias": {
 		    "en": "respiratory infections/covid-19",
