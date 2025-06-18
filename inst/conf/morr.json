@@ -30,6 +30,26 @@
 	    },
             "sex": [2,1]
         },
+       "ami": {
+            "alias": {
+		    "en": "acute myocardial infarction",
+		    "sv": "akut hjärtinfarkt"
+	    },
+            "causeexpr": {
+                "09B": "270",
+                "10": "I2[12]",
+                "10SE": "I2[045]"
+            },
+            "codedesc": {
+		    "en": "",
+		    "sv": ""
+	    },
+            "note": {
+		    "en": "Includes acute myocardial infarction (from ICD-9).",
+		    "sv": "Inkluderar akut hjärtinfarkt (från ICD-9)."
+	    },
+            "sex": [2,1]
+        },
         "bc": {
             "alias": {
 		    "en": "breast cancer",
@@ -269,7 +289,30 @@
 		    "sv": "Inkluderar HIV/AIDS (från ICD-9)."
 	    },
             "sex": [2,1]
-        },	
+        },
+	"ht": {
+            "alias": {
+		    "en": "hypertensive disease",
+		    "sv": "hypertonisjukdom"
+	    },
+            "causeexpr": {
+                "07A": "A08[34]",
+                "08A": "A082",
+                "09B": "B26[0-9]",
+                "10": "I1",
+                "10SE": "I1",
+                "101": "1066"
+            },
+            "codedesc": {
+		    "en": "ICD-6/7: 440--447; ICD-8: 400--404; ICD-9: 401--405; ICD-10: I10--I15",
+		    "sv": "ICD-6/7: 420--422; ICD-8/9: 410--414; ICD-10: I20--I25"
+	    },
+            "note": {
+		    "en": "Includes hypertensive disease (e.g. hypertensive heart and kidney disease).",
+		    "sv": "Inkluderar hypertonisjukdom (som hyptertensiv hjärt- och njursjukdom)."
+	    },
+            "sex": [2,1]
+        },
         "ihd": {
             "alias": {
 		    "en": "ischemic heart disease",
@@ -290,6 +333,29 @@
             "note": {
 		    "en": "Includes myocardial infarction and other conditions due to insufficient oxygen supply to the heart muscle. \"Coronary heart disease\" is often used as a more or less synonymous expression. The conditions is commonly abbreviated as IHD. This category is not defined in classifications before ICD-8: the nearest category in ICD-6/7 available from the condensed WHO lists is \"arteriosclerotic and degenerative heart diseases\". For some populations, such as Italy and Japan, this leads to significant artificial trends wit the switch to ICD-8.",
 		    "sv": "Inkluderar hjärtinfarkt och andra tillstånd som beror på otillräcklig syreförsörjning av hjärtmuskel. \"Kranskärlssjukdom\" används ofta som mer eller mindre synonymt uttryck. Den engelska förkortningen IHD (\"ischemic heart disease\") är också vanlig. Observera att begreppet inte finns i klassifikationer före ICD-8: den närmaste motsvarande kategorin i ICD-6/7, som kan tas fram utifrån de kategorier som finns tillgängliga via @whomort, är \"arteriosklerotiska och degenerativa hjärtsjukdomar\". För vissa befolkningar (t.ex. Italien och Japan) uppstår då tydliga konstlade trender vid övergången till ICD-8."
+	    },
+            "sex": [2,1]
+        },
+       "ihdnoami": {
+            "alias": {
+		    "en": "ischemic heart disease (non-AMI if defined)",
+		    "sv": "ischemisk hjärtsjukdom (ej HI om definieriad)"
+	    },
+            "causeexpr": {
+                "07A": "A081",
+                "08A": "A083",
+                "09B": "B279",
+                "10": "I2[045]",
+                "10SE": "I2[045]",
+                "101": "1067"
+            },
+            "codedesc": {
+		    "en": "ICD-6/7: 420--422; ICD-8/9: 414; ICD-10: I20, I24, I25",
+		    "sv": "ICD-6/7: 420--422; ICD-8/9: 414; ICD-10: I20, I24, I25"
+	    },
+            "note": {
+		"en": "Includes conditions due to insufficient oxygen supply to the heart muscle (not acute myocardial infarction, when that distinction is available). \"Coronary heart disease\" is often used as a more or less synonymous expression. The conditions is commonly abbreviated as IHD. This category is not defined in classifications before ICD-8: the nearest category in ICD-6/7 available from the condensed WHO lists is \"arteriosclerotic and degenerative heart diseases\". For some populations, such as Italy and Japan, this leads to significant artificial trends wit the switch to ICD-8.",
+		"sv": "Inkluderar hjärtinfarkt och andra tillstånd som beror på otillräcklig syreförsörjning av hjärtmuskel (ej akut hjärtinfarkt, när den uppdelningen finns tillgänglig). \"Kranskärlssjukdom\" används ofta som mer eller mindre synonymt uttryck. Den engelska förkortningen IHD (\"ischemic heart disease\") är också vanlig. Observera att begreppet inte finns i klassifikationer före ICD-8: den närmaste motsvarande kategorin i ICD-6/7, som kan tas fram utifrån de kategorier som finns tillgängliga via @whomort, är \"arteriosklerotiska och degenerativa hjärtsjukdomar\". För vissa befolkningar (t.ex. Italien och Japan) uppstår då tydliga konstlade trender vid övergången till ICD-8."
 	    },
             "sex": [2,1]
         },
@@ -665,6 +731,28 @@
             "note": {
 		    "en": "Includes conditons related to the heart except for ischemic heart disease.",
 		    "sv": "Inkluderar hjärtrelaterade tillstånd exklusive ischemisk hjärtsjukdom."
+	    },
+            "sex": [2,1]
+        },
+        "othhdnoht": {
+            "alias": {
+		    "en": "other heart disease",
+		    "sv": "annan hjärtsjukdom"
+	    },
+            "causeexpr": {
+                "07A": "A0(79|8[02])",
+                "08A": "A08[014]",
+                "09B": "B2[58][0-9]",
+                "10": "I([0345]|2[6-9])",
+                "101": "106[58]"
+            },
+            "codedesc": {
+		    "en": "ICD-6/7: 400--416, 430--434; ICD-8/9: 390--398, 415--429; ICD-10: I00--I09, I26--I51",
+		    "sv": "ICD-6/7: 400--416, 430--434; ICD-8/9: 390--398, 415--429; ICD-10: I00--I09, I26--I51"
+	    },
+            "note": {
+		    "en": "Includes conditons related to the heart except for ischemic and hypertensive heart disease.",
+		    "sv": "Inkluderar hjärtrelaterade tillstånd exklusive ischemisk eller hypertensiv hjärtsjukdom."
 	    },
             "sex": [2,1]
         },	
