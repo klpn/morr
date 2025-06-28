@@ -1,185 +1,734 @@
 {
-    "1060": {"name": "Cabo Verde"},
-    "1125": {"name": "Egypt"},
-    "1250": {"name": "Libyan Arab Jamahiriya"},
-    "1300": {"name": "Mauritius"},
-    "1303": {"name": "Mayotte"},
-    "1310": {"name": "Morocco"},
-    "1360": {"name": "Reunion"},
-    "1365": {"name": "Rodrigues"},
-    "1385": {"name": "Sao Tome and Principe"},
-    "1400": {"name": "Seychelles"},
-    "1430": {"name": "South Africa"},
-    "1520": {"name": "Tunisia"},
-    "1570": {"name": "Zimbabwe"},
-    "2005": {"name": "Anguilla"},
-    "2010": {"name": "Antigua and Barbuda"},
-    "2020": {"name": "Argentina"},
-    "2025": {"name": "Aruba"},
-    "2030": {"name": "Bahamas"},
-    "2040": {"name": "Barbados"},
-    "2045": {"name": "Belize"},
-    "2050": {"name": "Bermuda"},
-    "2060": {"name": "Bolivia"},
-    "2070": {"name": "Brazil"},
-    "2085": {"name": "British Virgin Islands"},
-    "2090": {"name": "Canada"},
-    "2110": {"name": "Cayman Islands"},
-    "2120": {"name": "Chile"},
-    "2130": {"name": "Colombia"},
-    "2140": {"name": "Costa Rica"},
-    "2150": {"name": "Cuba"},
-    "2160": {"name": "Dominica"},
-    "2170": {"name": "Dominican Republic"},
-    "2180": {"name": "Ecuador"},
-    "2190": {"name": "El Salvador"},
-    "2200": {"name": "Falkland Islands (Malvinas)"},
-    "2210": {"name": "French Guiana"},
-    "2230": {"name": "Grenada"},
-    "2240": {"name": "Guadeloupe"},
-    "2250": {"name": "Guatemala"},
-    "2260": {"name": "Guyana"},
-    "2270": {"name": "Haiti"},
-    "2280": {"name": "Honduras"},
-    "2290": {"name": "Jamaica"},
-    "2300": {"name": "Martinique"},
-    "2310": {"name": "Mexico"},
-    "2320": {"name": "Montserrat"},
-    "2330": {"name": "Netherlands Antilles"},
-    "2340": {"name": "Nicaragua"},
-    "2350": {"name": "Panama"},
-    "2360": {"name": "Paraguay"},
-    "2370": {"name": "Peru"},
-    "2380": {"name": "Puerto Rico"},
-    "2385": {"name": "Saint Kitts and Nevis"},
-    "2400": {"name": "Saint Lucia"},
-    "2410": {"name": "Saint Pierre and Miquelon"},
-    "2420": {"name": "Saint Vincent and Grenadines"},
-    "2430": {"name": "Suriname"},
-    "2440": {"name": "Trinidad and Tobago"},
-    "2445": {"name": "Turks and Caicos Islands"},
-    "2450": {"name": "United States of America"},
-    "2455": {"name": "Virgin Islands (USA)"},
-    "2460": {"name": "Uruguay"},
-    "2470": {"name": "Venezuela"},
-    "3020": {"name": "Bahrain"},
-    "3030": {"name": "Brunei Darussalam"},
-    "3068": {"name": "China"},
-    "3070": {"name": "China: Province of Taiwan only"},
-    "3080": {"name": "Cyprus"},
-    "3090": {"name": "Hong Kong SAR"},
-    "3130": {"name": "Iran (Islamic Republic of)"},
-    "3140": {"name": "Iraq"},
-    "3150": {"name": "Israel"},
-    "3160": {"name": "Japan"},
-    "3170": {"name": "Jordan"},
-    "3190": {"name": "Kuwait"},
-    "3210": {"name": "Lebanon"},
-    "3220": {"name": "Macau"},
-    "3236": {"name": "Malaysia"},
-    "3255": {"name": "Maldives"},
-    "3260": {"name": "Mongolia"},
-    "3270": {"name": "Myanmar"},
-    "3283": {"name": "Occupied Palestinian Territory"},
-    "3285": {"name": "Oman"},
-    "3290": {"name": "Pakistan"},
-    "3300": {"name": "Philippines"},
-    "3320": {"name": "Qatar"},
-    "3325": {"name": "Republic of Korea"},
-    "3330": {"name": "Ryu Kyu Islands"},
-    "3340": {"name": "Saudi Arabia"},
-    "3350": {"name": "Singapore"},
-    "3365": {"name": "Sri Lanka"},
-    "3370": {"name": "Syrian Arab Republic"},
-    "3380": {"name": "Thailand"},
-    "3400": {"name": "Turkey"},
-    "3405": {"name": "United Arab Emirates"},
-    "4005": {"name": "Albania"},
-    "4007": {"name": "Armenia"},
-    "4008": {"name": "Andorra"},
-    "4010": {"name": "Austria"},
-    "4012": {"name": "Azerbaijan"},
-    "4018": {"name": "Belarus"},
-    "4020": {"name": "Belgium"},
-    "4025": {"name": "Bosnia and Herzegovina"},
-    "4030": {"name": "Bulgaria"},
-    "4038": {"name": "Croatia"},
-    "4040": {"name": "Czechoslovakia, Former"},
-    "4045": {"name": "Czech Republic"},
-    "4050": {"name": "Denmark"},
-    "4055": {"name": "Estonia"},
-    "4070": {"name": "Finland"},
-    "4080": {"name": "France"},
-    "4084": {"name": "Georgia"},
-    "4085": {"name": "Germany"},
-    "4090": {"name": "Germany, Former Democratic Republic"},
-    "4100": {"name": "Germany, Former Federal Republic"},
-    "4120": {"name": "Germany, West Berlin"},
-    "4140": {"name": "Greece"},
-    "4150": {"name": "Hungary"},
-    "4160": {"name": "Iceland"},
-    "4170": {"name": "Ireland"},
-    "4180": {"name": "Italy"},
-    "4182": {"name": "Kazakhstan"},
-    "4184": {"name": "Kyrgyzstan"},
-    "4186": {"name": "Latvia"},
-    "4188": {"name": "Lithuania"},
-    "4190": {"name": "Luxembourg"},
-    "4195": {"name": "TFYR Macedonia"},
-    "4200": {"name": "Malta"},
-    "4205": {"name": "Monaco"},
-    "4207": {"name": "Montenegro"},
-    "4210": {"name": "Netherlands"},
-    "4220": {"name": "Norway"},
-    "4230": {"name": "Poland"},
-    "4240": {"name": "Portugal"},
-    "4260": {"name": "Republic of Moldova"},
-    "4270": {"name": "Romania"},
-    "4272": {"name": "Russian Federation"},
-    "4273": {"name": "Serbia"},
-    "4274": {"name": "Slovakia"},
-    "4275": {"name": "San Marino"},
-    "4276": {"name": "Slovenia"},
-    "4280": {"name": "Spain"},
-    "4290": {"name": "Sweden"},
-    "4300": {"name": "Switzerland"},
-    "4301": {"name": "Tajikistan"},
-    "4302": {"name": "Turkmenistan"},
-    "4303": {"name": "Ukraine"},
-    "4304": {"name": "USSR, Former"},
-    "4308": {"name": "United Kingdom"},
-    "4310": {"name": "United Kingdom, England and Wales"},
-    "4320": {"name": "United Kingdom, Northern Ireland"},
-    "4330": {"name": "United Kingdom, Scotland"},
-    "4335": {"name": "Uzbekistan"},
-    "4340": {"name": "Yugoslavia, Former"},
-    "4350": {"name": "Serbia and Montenegro, Former"},
-    "5020": {"name": "Australia"},
-    "5070": {"name": "Fiji"},
-    "5105": {"name": "Kiribati"},
-    "5150": {"name": "New Zealand"},
-    "5195": {"name": "Papua New Guinea"},
-    "5198": {"name": "Solomon Islands"},
-    "SE": {"name": "Sweden"},
-    "SE110": {"name": "Stockholm County"},
-    "SE121": {"name": "Uppsala County"},
-    "SE122": {"name": "Södermanland County"},
-    "SE123": {"name": "Östergötland County"},
-    "SE124": {"name": "Örebro County"},
-    "SE125": {"name": "Västmanland County"},
-    "SE211": {"name": "Jönköping County"},
-    "SE212": {"name": "Kronoberg County"},
-    "SE213": {"name": "Kalmar County"},
-    "SE214": {"name": "Gotland County"},
-    "SE221": {"name": "Blekinge County"},
-    "SE224": {"name": "Skåne County"},
-    "SE231": {"name": "Halland County"},
-    "SE232": {"name": "Västra Götaland County"},
-    "SE311": {"name": "Värmland County"},
-    "SE312": {"name": "Dalarna County"},
-    "SE313": {"name": "Gävleborg County"},
-    "SE321": {"name": "Västernorrland County"},
-    "SE322": {"name": "Jämtland County"},
-    "SE331": {"name": "Västerbotten County"},
-    "SE332": {"name": "Norrbotten County"}
+  "1060": {
+    "iso_a2": "CV",
+    "name": "Cabo Verde"
+  },
+  "1125": {
+    "iso_a2": "EG",
+    "name": "Egypt"
+  },
+  "1250": {
+    "iso_a2": "LY",
+    "name": "Libyan Arab Jamahiriya"
+  },
+  "1300": {
+    "iso_a2": "MU",
+    "name": "Mauritius"
+  },
+  "1303": {
+    "iso_a2": "YT",
+    "name": "Mayotte"
+  },
+  "1310": {
+    "iso_a2": "MA",
+    "name": "Morocco"
+  },
+  "1360": {
+    "iso_a2": "RE",
+    "name": "Reunion"
+  },
+  "1365": {
+    "iso_a2": "MU-RO",
+    "name": "Rodrigues"
+  },
+  "1385": {
+    "iso_a2": "ST",
+    "name": "Sao Tome and Principe"
+  },
+  "1400": {
+    "iso_a2": "SC",
+    "name": "Seychelles"
+  },
+  "1430": {
+    "iso_a2": "ZA",
+    "name": "South Africa"
+  },
+  "1520": {
+    "iso_a2": "TN",
+    "name": "Tunisia"
+  },
+  "1570": {
+    "iso_a2": "ZW",
+    "name": "Zimbabwe"
+  },
+  "2005": {
+    "iso_a2": "AI",
+    "name": "Anguilla"
+  },
+  "2010": {
+    "iso_a2": "AG",
+    "name": "Antigua and Barbuda"
+  },
+  "2020": {
+    "iso_a2": "AR",
+    "name": "Argentina"
+  },
+  "2025": {
+    "iso_a2": "AW",
+    "name": "Aruba"
+  },
+  "2030": {
+    "iso_a2": "BS",
+    "name": "Bahamas"
+  },
+  "2040": {
+    "iso_a2": "BB",
+    "name": "Barbados"
+  },
+  "2045": {
+    "iso_a2": "BZ",
+    "name": "Belize"
+  },
+  "2050": {
+    "iso_a2": "BM",
+    "name": "Bermuda"
+  },
+  "2060": {
+    "iso_a2": "BO",
+    "name": "Bolivia"
+  },
+  "2070": {
+    "iso_a2": "BR",
+    "name": "Brazil"
+  },
+  "2085": {
+    "iso_a2": "VG",
+    "name": "British Virgin Islands"
+  },
+  "2090": {
+    "iso_a2": "CA",
+    "name": "Canada"
+  },
+  "2110": {
+    "iso_a2": "KY",
+    "name": "Cayman Islands"
+  },
+  "2120": {
+    "iso_a2": "CL",
+    "name": "Chile"
+  },
+  "2130": {
+    "iso_a2": "CO",
+    "name": "Colombia"
+  },
+  "2140": {
+    "iso_a2": "CR",
+    "name": "Costa Rica"
+  },
+  "2150": {
+    "iso_a2": "CU",
+    "name": "Cuba"
+  },
+  "2160": {
+    "iso_a2": "DM",
+    "name": "Dominica"
+  },
+  "2170": {
+    "iso_a2": "DO",
+    "name": "Dominican Republic"
+  },
+  "2180": {
+    "iso_a2": "EC",
+    "name": "Ecuador"
+  },
+  "2190": {
+    "iso_a2": "SV",
+    "name": "El Salvador"
+  },
+  "2200": {
+    "iso_a2": "FK",
+    "name": "Falkland Islands (Malvinas)"
+  },
+  "2210": {
+    "iso_a2": "GF",
+    "name": "French Guiana"
+  },
+  "2230": {
+    "iso_a2": "GD",
+    "name": "Grenada"
+  },
+  "2240": {
+    "iso_a2": "GP",
+    "name": "Guadeloupe"
+  },
+  "2250": {
+    "iso_a2": "GT",
+    "name": "Guatemala"
+  },
+  "2260": {
+    "iso_a2": "GY",
+    "name": "Guyana"
+  },
+  "2270": {
+    "iso_a2": "HT",
+    "name": "Haiti"
+  },
+  "2280": {
+    "iso_a2": "HN",
+    "name": "Honduras"
+  },
+  "2290": {
+    "iso_a2": "JM",
+    "name": "Jamaica"
+  },
+  "2300": {
+    "iso_a2": "MQ",
+    "name": "Martinique"
+  },
+  "2310": {
+    "iso_a2": "MX",
+    "name": "Mexico"
+  },
+  "2320": {
+    "iso_a2": "MS",
+    "name": "Montserrat"
+  },
+  "2330": {
+    "iso_a2": "",
+    "name": "Netherlands Antilles"
+  },
+  "2340": {
+    "iso_a2": "NI",
+    "name": "Nicaragua"
+  },
+  "2350": {
+    "iso_a2": "PA",
+    "name": "Panama"
+  },
+  "2360": {
+    "iso_a2": "PY",
+    "name": "Paraguay"
+  },
+  "2370": {
+    "iso_a2": "PE",
+    "name": "Peru"
+  },
+  "2380": {
+    "iso_a2": "PR",
+    "name": "Puerto Rico"
+  },
+  "2385": {
+    "iso_a2": "KN",
+    "name": "Saint Kitts and Nevis"
+  },
+  "2400": {
+    "iso_a2": "LC",
+    "name": "Saint Lucia"
+  },
+  "2410": {
+    "iso_a2": "PM",
+    "name": "Saint Pierre and Miquelon"
+  },
+  "2420": {
+    "iso_a2": "VC",
+    "name": "Saint Vincent and Grenadines"
+  },
+  "2430": {
+    "iso_a2": "SR",
+    "name": "Suriname"
+  },
+  "2440": {
+    "iso_a2": "TT",
+    "name": "Trinidad and Tobago"
+  },
+  "2445": {
+    "iso_a2": "TC",
+    "name": "Turks and Caicos Islands"
+  },
+  "2450": {
+    "iso_a2": "US",
+    "name": "United States of America"
+  },
+  "2455": {
+    "iso_a2": "VI",
+    "name": "Virgin Islands (USA)"
+  },
+  "2460": {
+    "iso_a2": "UY",
+    "name": "Uruguay"
+  },
+  "2470": {
+    "iso_a2": "VE",
+    "name": "Venezuela"
+  },
+  "3020": {
+    "iso_a2": "BH",
+    "name": "Bahrain"
+  },
+  "3030": {
+    "iso_a2": "BN",
+    "name": "Brunei Darussalam"
+  },
+  "3068": {
+    "iso_a2": "CN",
+    "name": "China"
+  },
+  "3070": {
+    "iso_a2": "TW",
+    "name": "China: Province of Taiwan only"
+  },
+  "3080": {
+    "iso_a2": "CY",
+    "name": "Cyprus"
+  },
+  "3090": {
+    "iso_a2": "HK",
+    "name": "Hong Kong SAR"
+  },
+  "3130": {
+    "iso_a2": "IR",
+    "name": "Iran (Islamic Republic of)"
+  },
+  "3140": {
+    "iso_a2": "IQ",
+    "name": "Iraq"
+  },
+  "3150": {
+    "iso_a2": "IL",
+    "name": "Israel"
+  },
+  "3160": {
+    "iso_a2": "JP",
+    "name": "Japan"
+  },
+  "3170": {
+    "iso_a2": "JO",
+    "name": "Jordan"
+  },
+  "3190": {
+    "iso_a2": "KW",
+    "name": "Kuwait"
+  },
+  "3210": {
+    "iso_a2": "LB",
+    "name": "Lebanon"
+  },
+  "3220": {
+    "iso_a2": "MO",
+    "name": "Macau"
+  },
+  "3236": {
+    "iso_a2": "MY",
+    "name": "Malaysia"
+  },
+  "3255": {
+    "iso_a2": "MV",
+    "name": "Maldives"
+  },
+  "3260": {
+    "iso_a2": "MN",
+    "name": "Mongolia"
+  },
+  "3270": {
+    "iso_a2": "MM",
+    "name": "Myanmar"
+  },
+  "3283": {
+    "iso_a2": "PS",
+    "name": "Occupied Palestinian Territory"
+  },
+  "3285": {
+    "iso_a2": "OM",
+    "name": "Oman"
+  },
+  "3290": {
+    "iso_a2": "PK",
+    "name": "Pakistan"
+  },
+  "3300": {
+    "iso_a2": "PH",
+    "name": "Philippines"
+  },
+  "3320": {
+    "iso_a2": "QA",
+    "name": "Qatar"
+  },
+  "3325": {
+    "iso_a2": "KR",
+    "name": "Republic of Korea"
+  },
+  "3330": {
+    "iso_a2": "JP-47",
+    "name": "Ryu Kyu Islands"
+  },
+  "3340": {
+    "iso_a2": "SA",
+    "name": "Saudi Arabia"
+  },
+  "3350": {
+    "iso_a2": "SG",
+    "name": "Singapore"
+  },
+  "3365": {
+    "iso_a2": "LK",
+    "name": "Sri Lanka"
+  },
+  "3370": {
+    "iso_a2": "SY",
+    "name": "Syrian Arab Republic"
+  },
+  "3380": {
+    "iso_a2": "TH",
+    "name": "Thailand"
+  },
+  "3400": {
+    "iso_a2": "TR",
+    "name": "Turkey"
+  },
+  "3405": {
+    "iso_a2": "AE",
+    "name": "United Arab Emirates"
+  },
+  "4005": {
+    "iso_a2": "AL",
+    "name": "Albania"
+  },
+  "4007": {
+    "iso_a2": "AM",
+    "name": "Armenia"
+  },
+  "4008": {
+    "iso_a2": "AD",
+    "name": "Andorra"
+  },
+  "4010": {
+    "iso_a2": "AT",
+    "name": "Austria"
+  },
+  "4012": {
+    "iso_a2": "AZ",
+    "name": "Azerbaijan"
+  },
+  "4018": {
+    "iso_a2": "BY",
+    "name": "Belarus"
+  },
+  "4020": {
+    "iso_a2": "BE",
+    "name": "Belgium"
+  },
+  "4025": {
+    "iso_a2": "BA",
+    "name": "Bosnia and Herzegovina"
+  },
+  "4030": {
+    "iso_a2": "BG",
+    "name": "Bulgaria"
+  },
+  "4038": {
+    "iso_a2": "HR",
+    "name": "Croatia"
+  },
+  "4040": {
+    "iso_a2": "CS",
+    "name": "Czechoslovakia, Former"
+  },
+  "4045": {
+    "iso_a2": "CZ",
+    "name": "Czech Republic"
+  },
+  "4050": {
+    "iso_a2": "DK",
+    "name": "Denmark"
+  },
+  "4055": {
+    "iso_a2": "EE",
+    "name": "Estonia"
+  },
+  "4070": {
+    "iso_a2": "FI",
+    "name": "Finland"
+  },
+  "4080": {
+    "iso_a2": "FR",
+    "name": "France"
+  },
+  "4084": {
+    "iso_a2": "GE",
+    "name": "Georgia"
+  },
+  "4085": {
+    "iso_a2": "DE",
+    "name": "Germany"
+  },
+  "4090": {
+    "iso_a2": "DD",
+    "name": "Germany, Former Democratic Republic"
+  },
+  "4100": {
+    "iso_a2": "DE",
+    "name": "Germany, Former Federal Republic"
+  },
+  "4120": {
+    "iso_a2": "",
+    "name": "Germany, West Berlin"
+  },
+  "4140": {
+    "iso_a2": "GR",
+    "name": "Greece"
+  },
+  "4150": {
+    "iso_a2": "HU",
+    "name": "Hungary"
+  },
+  "4160": {
+    "iso_a2": "IS",
+    "name": "Iceland"
+  },
+  "4170": {
+    "iso_a2": "IE",
+    "name": "Ireland"
+  },
+  "4180": {
+    "iso_a2": "IT",
+    "name": "Italy"
+  },
+  "4182": {
+    "iso_a2": "KZ",
+    "name": "Kazakhstan"
+  },
+  "4184": {
+    "iso_a2": "KG",
+    "name": "Kyrgyzstan"
+  },
+  "4186": {
+    "iso_a2": "LV",
+    "name": "Latvia"
+  },
+  "4188": {
+    "iso_a2": "LT",
+    "name": "Lithuania"
+  },
+  "4190": {
+    "iso_a2": "LU",
+    "name": "Luxembourg"
+  },
+  "4195": {
+    "iso_a2": "MK",
+    "name": "TFYR Macedonia"
+  },
+  "4200": {
+    "iso_a2": "MT",
+    "name": "Malta"
+  },
+  "4205": {
+    "iso_a2": "MC",
+    "name": "Monaco"
+  },
+  "4207": {
+    "iso_a2": "ME",
+    "name": "Montenegro"
+  },
+  "4210": {
+    "iso_a2": "NL",
+    "name": "Netherlands"
+  },
+  "4220": {
+    "iso_a2": "NO",
+    "name": "Norway"
+  },
+  "4230": {
+    "iso_a2": "PL",
+    "name": "Poland"
+  },
+  "4240": {
+    "iso_a2": "PT",
+    "name": "Portugal"
+  },
+  "4260": {
+    "iso_a2": "MD",
+    "name": "Republic of Moldova"
+  },
+  "4270": {
+    "iso_a2": "RO",
+    "name": "Romania"
+  },
+  "4272": {
+    "iso_a2": "RU",
+    "name": "Russian Federation"
+  },
+  "4273": {
+    "iso_a2": "RS",
+    "name": "Serbia"
+  },
+  "4274": {
+    "iso_a2": "SK",
+    "name": "Slovakia"
+  },
+  "4275": {
+    "iso_a2": "SM",
+    "name": "San Marino"
+  },
+  "4276": {
+    "iso_a2": "SI",
+    "name": "Slovenia"
+  },
+  "4280": {
+    "iso_a2": "ES",
+    "name": "Spain"
+  },
+  "4290": {
+    "iso_a2": "SE",
+    "name": "Sweden"
+  },
+  "4300": {
+    "iso_a2": "CH",
+    "name": "Switzerland"
+  },
+  "4301": {
+    "iso_a2": "TJ",
+    "name": "Tajikistan"
+  },
+  "4302": {
+    "iso_a2": "TM",
+    "name": "Turkmenistan"
+  },
+  "4303": {
+    "iso_a2": "UA",
+    "name": "Ukraine"
+  },
+  "4304": {
+    "iso_a2": "SU",
+    "name": "USSR, Former"
+  },
+  "4308": {
+    "iso_a2": "GB",
+    "name": "United Kingdom"
+  },
+  "4310": {
+    "iso_a2": "GB-EAW",
+    "name": "United Kingdom, England and Wales"
+  },
+  "4320": {
+    "iso_a2": "GB-NIR",
+    "name": "United Kingdom, Northern Ireland"
+  },
+  "4330": {
+    "iso_a2": "GB-SCT",
+    "name": "United Kingdom, Scotland"
+  },
+  "4335": {
+    "iso_a2": "UZ",
+    "name": "Uzbekistan"
+  },
+  "4340": {
+    "iso_a2": "YU",
+    "name": "Yugoslavia, Former"
+  },
+  "4350": {
+    "iso_a2": "CS",
+    "name": "Serbia and Montenegro, Former"
+  },
+  "5020": {
+    "iso_a2": "AU",
+    "name": "Australia"
+  },
+  "5070": {
+    "iso_a2": "FJ",
+    "name": "Fiji"
+  },
+  "5105": {
+    "iso_a2": "KI",
+    "name": "Kiribati"
+  },
+  "5150": {
+    "iso_a2": "NZ",
+    "name": "New Zealand"
+  },
+  "5195": {
+    "iso_a2": "PG",
+    "name": "Papua New Guinea"
+  },
+  "5198": {
+    "iso_a2": "SB",
+    "name": "Solomon Islands"
+  },
+  "SE": {
+    "iso_a2": "SE",
+    "name": "Sweden"
+  },
+  "SE110": {
+    "iso_a2": "SE-AB",
+    "name": "Stockholm County"
+  },
+  "SE121": {
+    "iso_a2": "SE-C",
+    "name": "Uppsala County"
+  },
+  "SE122": {
+    "iso_a2": "SE-D",
+    "name": "Södermanland County"
+  },
+  "SE123": {
+    "iso_a2": "SE-E",
+    "name": "Östergötland County"
+  },
+  "SE124": {
+    "iso_a2": "SE-T",
+    "name": "Örebro County"
+  },
+  "SE125": {
+    "iso_a2": "SE-U",
+    "name": "Västmanland County"
+  },
+  "SE211": {
+    "iso_a2": "SE-F",
+    "name": "Jönköping County"
+  },
+  "SE212": {
+    "iso_a2": "SE-G",
+    "name": "Kronoberg County"
+  },
+  "SE213": {
+    "iso_a2": "SE-H",
+    "name": "Kalmar County"
+  },
+  "SE214": {
+    "iso_a2": "SE-I",
+    "name": "Gotland County"
+  },
+  "SE221": {
+    "iso_a2": "SE-K",
+    "name": "Blekinge County"
+  },
+  "SE224": {
+    "iso_a2": "SE-M",
+    "name": "Skåne County"
+  },
+  "SE231": {
+    "iso_a2": "SE-N",
+    "name": "Halland County"
+  },
+  "SE232": {
+    "iso_a2": "SE-O",
+    "name": "Västra Götaland County"
+  },
+  "SE311": {
+    "iso_a2": "SE-S",
+    "name": "Värmland County"
+  },
+  "SE312": {
+    "iso_a2": "SE-C",
+    "name": "Dalarna County"
+  },
+  "SE313": {
+    "iso_a2": "SE-X",
+    "name": "Gävleborg County"
+  },
+  "SE321": {
+    "iso_a2": "SE-Y",
+    "name": "Västernorrland County"
+  },
+  "SE322": {
+    "iso_a2": "SE-Z",
+    "name": "Jämtland County"
+  },
+  "SE331": {
+    "iso_a2": "SE-AC",
+    "name": "Västerbotten County"
+  },
+  "SE332": {
+    "iso_a2": "SE-BD",
+    "name": "Norrbotten County"
+  }
 }
