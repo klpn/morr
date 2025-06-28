@@ -48,7 +48,7 @@ caframe <- function(ctry, ca1, ca2) {
         else
             ca2e <- ce.expand(miconf[["causes"]][[ca2]][["causeexpr"]][[li]], li)
         if (ctry=="all") {
-            pipestr <- sprintf("./propyrs_ctry.sh \"[0-9]\" \"%s\" \"%s\"",
+            pipestr <- sprintf("./propyrs_ctry.sh \"[0-9]\" \"%s\" \"%s\" \"%s\"",
                                ca1e, ca2e, le)
         } else if (ctry=="SE") {
             if (grepl("SE", li))
@@ -87,15 +87,19 @@ ctry_caf <- function(ctry, ca1, ca2) {
         sctry <- "SE"
     else
         sctry <- ctry
+    if (grepl("all", ctry))
+        qctry <- "[0-9]"
+    else
+        qctry <- ctry
     cafpath <- sprintf("%s/%s-%s.csv", datapath, cacomb, sctry)
     if (caall %in% names(cafs)) {
-        cafs[[caall]] |> filter(grepl(!!ctry, ctry))
+        cafs[[caall]] |> filter(grepl(qctry, ctry))
     } else if (file.exists(cafpath)) {
-        read.csv(cafpath) |> filter(grepl(!!ctry, ctry))
+        read.csv(cafpath) |> filter(grepl(qctry, ctry))
     } else {
         caf <- caframe(sctry, ca1, ca2)
         write.csv(caf, cafpath, quote = FALSE, row.names = FALSE)
-        caf |> filter(grepl(!!ctry, ctry))
+        caf |> filter(grepl(qctry, ctry))
     }
 }
 
