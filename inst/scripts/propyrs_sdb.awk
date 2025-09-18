@@ -47,7 +47,7 @@ END {
             whoage = 1
         else {
             if (age == 1)
-                whoage == 2
+                whoage = 2
             else
                 whoage = age+5
         }
