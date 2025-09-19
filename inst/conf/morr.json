@@ -2,15 +2,15 @@
     "causes": {
         "pop": {
             "alias": { 
-                    "en": "population",
-                    "sv": "befolkning"
+                "en": "population",
+                "sv": "befolkning"
             },
             "sex": [2,1]
         },
         "all": {
             "alias": { 
-                    "en": "all causes",
-                    "sv": "alla orsaker"
+                "en": "all causes",
+                "sv": "alla orsaker"
             },
             "causeexpr": {
                 "07A": "A000",
@@ -22,19 +22,19 @@
                 "101": "1000"
             },
             "codedesc": {
-                    "en": "ICD-6/7/8/9: 000--E999, ICD-10: A--Y",
-                    "sv": "ICD-6/7/8/9: 000--E999, ICD-10: A--Y"
+                "en": "ICD-6/7/8/9: 000--E999, ICD-10: A--Y",
+                "sv": "ICD-6/7/8/9: 000--E999, ICD-10: A--Y"
             },
             "note": {
-                    "en": "Includes all causes",
-                    "sv": "Inkluderar samtliga dödsorsaker."
+                "en": "Includes all causes",
+                "sv": "Inkluderar samtliga dödsorsaker."
             },
             "sex": [2,1]
         },
-       "ami": {
+        "ami": {
             "alias": {
-                    "en": "acute myocardial infarction",
-                    "sv": "akut hjärtinfarkt"
+                "en": "acute myocardial infarction",
+                "sv": "akut hjärtinfarkt"
             },
             "causeexpr": {
                 "09B": "B270",
@@ -43,19 +43,19 @@
                 "10SE": "I2[12]"
             },
             "codedesc": {
-                    "en": "",
-                    "sv": ""
+                "en": "",
+                "sv": ""
             },
             "note": {
-                    "en": "Includes acute myocardial infarction (from ICD-9).",
-                    "sv": "Inkluderar akut hjärtinfarkt (från ICD-9)."
+                "en": "Includes acute myocardial infarction (from ICD-9).",
+                "sv": "Inkluderar akut hjärtinfarkt (från ICD-9)."
             },
             "sex": [2,1]
         },
         "bc": {
             "alias": {
-                    "en": "breast cancer",
-                    "sv": "bröstcancer"
+                "en": "breast cancer",
+                "sv": "bröstcancer"
             },
             "causeexpr": {
                 "07A": "A051",
@@ -66,19 +66,19 @@
                 "101": "1036"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 170; ICD-8/9: 174; ICD-10: C50",
-                    "sv": "ICD-6/7: 170; ICD-8/9: 174; ICD-10: C50"
+                "en": "ICD-6/7: 170; ICD-8/9: 174; ICD-10: C50",
+                "sv": "ICD-6/7: 170; ICD-8/9: 174; ICD-10: C50"
             },
             "note": {
-                    "en": "Includes breast cancer.",
-                    "sv": "Inkluderar cancer i bröst."
+                "en": "Includes breast cancer.",
+                "sv": "Inkluderar cancer i bröst."
             },
             "sex": 2
         },
         "cervc": {
             "alias": { 
-                    "en": "cervical cancer",
-                    "sv": "cervixcancer"
+                "en": "cervical cancer",
+                "sv": "cervixcancer"
             },
             "causeexpr": {
                 "07A": "A052",
@@ -89,19 +89,19 @@
                 "101": "1037"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 171; ICD-8/9: 180; ICD-10: C53",
-                    "sv": "ICD-6/7: 171; ICD-8/9: 180; ICD-10: C53"
+                "en": "ICD-6/7: 171; ICD-8/9: 180; ICD-10: C53",
+                "sv": "ICD-6/7: 171; ICD-8/9: 180; ICD-10: C53"
             },
             "note": {
-                    "en": "Includes cervical cancer.",
-                    "sv": "Inkluderar cancer i livmoderhals."
+                "en": "Includes cervical cancer.",
+                "sv": "Inkluderar cancer i livmoderhals."
             },
             "sex": 2
         },
         "chresp": {
             "alias": {
-                    "en": "chronic respiratory disease",
-                    "sv": "kronisk lungsjukdom"
+                "en": "chronic respiratory disease",
+                "sv": "kronisk lungsjukdom"
             },
             "causeexpr": {
                 "07A": "A09[3-7]",
@@ -113,19 +113,19 @@
                 "101": "107[67]"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 501--527; ICD-8/9: 490--519; ICD-10: J30--J98",
-                    "sv": "ICD-6/7: 501--527; ICD-8/9: 490--519; ICD-10: J30--J98"
+                "en": "ICD-6/7: 501--527; ICD-8/9: 490--519; ICD-10: J30--J98",
+                "sv": "ICD-6/7: 501--527; ICD-8/9: 490--519; ICD-10: J30--J98"
             },
             "note": {
-                    "en": "Includes COPD, asthma, and other non-infectious, non-neoplastic respiratory diseases.",
-                    "sv": "Inkluderar KOL, astma och andra sjukdomar i andningsorganen utom infektioner och tumörer."
+                "en": "Includes COPD, asthma, and other non-infectious, non-neoplastic respiratory diseases.",
+                "sv": "Inkluderar KOL, astma och andra sjukdomar i andningsorganen utom infektioner och tumörer."
             },
             "sex": [2,1]
         },
         "circ": {
             "alias": {
-                    "en": "circulatory diseases",
-                    "sv": "cirkulationsorgan"
+                "en": "circulatory diseases",
+                "sv": "cirkulationsorgan"
             },
             "causeexpr": {
                 "07A": "A0(70|79|8[0-6])",
@@ -137,19 +137,19 @@
                 "101": "1064"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 330--334, 400--468; ICD-8/9: 390--459; ICD-10: F01, I00--I99",
-                    "sv": "ICD-6/7: 330--334, 400--468; ICD-8/9: 390--459; ICD-10: F01, I00--I99"
+                "en": "ICD-6/7: 330--334, 400--468; ICD-8/9: 390--459; ICD-10: F01, I00--I99",
+                "sv": "ICD-6/7: 330--334, 400--468; ICD-8/9: 390--459; ICD-10: F01, I00--I99"
             },
             "note": {
-                    "en": "Includes heart diseases, stroke (which, for ICD-10, includes vascular dementia), and other circulatory conditions. \"Cardiovascular disease\" may be used as a synonymous expression, but may also refer to subclasses of this disease category.",
-                    "sv": "Inkluderar hjärtsjukdomar, slaganfall (för ICD-10 även vaskulär demens) och andra åkommor i cirkulationsorganen. \"Hjärtkärlsjukdom\" och \"kardiovaskulär sjukdom\" används ofta som synonyma uttryck, men de kan även syfta på undergrupper av kategorin."
+                "en": "Includes heart diseases, stroke (which, for ICD-10, includes vascular dementia), and other circulatory conditions. \"Cardiovascular disease\" may be used as a synonymous expression, but may also refer to subclasses of this disease category.",
+                "sv": "Inkluderar hjärtsjukdomar, slaganfall (för ICD-10 även vaskulär demens) och andra åkommor i cirkulationsorganen. \"Hjärtkärlsjukdom\" och \"kardiovaskulär sjukdom\" används ofta som synonyma uttryck, men de kan även syfta på undergrupper av kategorin."
             },
             "sex": [2,1]
         },
         "diab": {
             "alias": {
-                    "en": "diabetes",
-                    "sv": "diabetes"
+                "en": "diabetes",
+                "sv": "diabetes"
             },
             "causeexpr": {
                 "07A": "A063",
@@ -160,19 +160,19 @@
                 "101": "1052"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 260; ICD-8/9: 250; ICD-10: E10--E14",
-                    "sv": "ICD-6/7: 260; ICD-8/9: 250; ICD-10: E10--E14"
+                "en": "ICD-6/7: 260; ICD-8/9: 250; ICD-10: E10--E14",
+                "sv": "ICD-6/7: 260; ICD-8/9: 250; ICD-10: E10--E14"
             },
             "note": {
-                    "en": "Diabetes mellitus (type 1 and type 2). The tendency to report diabetes rather than compliacations (such as ischemic heart disease) as underlying cause of death often varies between populations and over time within populations.",
-                    "sv": "Diabetes mellitus (typ 1 eller typ 2). Benägenheten att rapportera diabetes snarare än komplikationer (t.ex. ischemisk hjärtsjukdom) som underliggande dödsorsak varierar ofta mellan befolkningar och tidsperioder."
+                "en": "Diabetes mellitus (type 1 and type 2). The tendency to report diabetes rather than compliacations (such as ischemic heart disease) as underlying cause of death often varies between populations and over time within populations.",
+                "sv": "Diabetes mellitus (typ 1 eller typ 2). Benägenheten att rapportera diabetes snarare än komplikationer (t.ex. ischemisk hjärtsjukdom) som underliggande dödsorsak varierar ofta mellan befolkningar och tidsperioder."
             },
             "sex": [2,1]
         },
         "ext": {
             "alias": {
-                    "en": "external cause",
-                    "sv": "yttre orsaker"
+                "en": "external cause",
+                "sv": "yttre orsaker"
             },
             "causeexpr": {
                 "07A": "A1(3[89]|[45])",
@@ -184,19 +184,19 @@
                 "101": "1095"
             },
             "codedesc": {
-                    "en": "ICD-6/7: E800--E999; ICD-10: V01--Y89",
-                    "sv": "ICD-6/7: E800--E999; ICD-10: V01--Y89"
+                "en": "ICD-6/7: E800--E999; ICD-10: V01--Y89",
+                "sv": "ICD-6/7: E800--E999; ICD-10: V01--Y89"
             },
             "note": {
-                    "en": "Includes accidents, suicides, homicides, legal interventions and even complications of medical care (in these cases, the diseases behind the medical interventions are often reported as underlying causes of death, however).",
-                    "sv": "Inkluderar olyckor, självmord, mord, legala ingripanden och även komplikationer i samband med vård (även om bakomliggande sjukdomar då ofta rapporteras som underliggande dödsorsak)."
+                "en": "Includes accidents, suicides, homicides, legal interventions and even complications of medical care (in these cases, the diseases behind the medical interventions are often reported as underlying causes of death, however).",
+                "sv": "Inkluderar olyckor, självmord, mord, legala ingripanden och även komplikationer i samband med vård (även om bakomliggande sjukdomar då ofta rapporteras som underliggande dödsorsak)."
             },
             "sex": [2,1]
         },
         "fallacc": {
             "alias": {
-                    "en": "accidental falls",
-                    "sv": "fallolyckor"
+                "en": "accidental falls",
+                "sv": "fallolyckor"
             },
             "causeexpr": {
                 "07A": "A141",
@@ -207,19 +207,19 @@
                 "101": "1097"
             },
             "codedesc": {
-                    "en": "ICD-6/7: E900--E904; ICD-8: E880--E887; ICD-9: E880--E888; ICD-10: W00--W19",
-                    "sv": "ICD-6/7: E900--E904; ICD-8: E880--E887; ICD-9: E880--E888; ICD-10: W00--W19"
+                "en": "ICD-6/7: E900--E904; ICD-8: E880--E887; ICD-9: E880--E888; ICD-10: W00--W19",
+                "sv": "ICD-6/7: E900--E904; ICD-8: E880--E887; ICD-9: E880--E888; ICD-10: W00--W19"
             },
             "note": {
-                    "en": "Trends may be infleunced by tendency to report unspecified accidents or complications of falls (such as thrombosis or pneumonia) as underlying causes.",
-                    "sv": "Trender kan påverkas av benägenheten att rapportera ospecificerade olyckor eller komplikationer vid fall (t.ex. blodpropp eller lunginflammation) som underliggande dödsorsak."
+                "en": "Trends may be infleunced by tendency to report unspecified accidents or complications of falls (such as thrombosis or pneumonia) as underlying causes.",
+                "sv": "Trender kan påverkas av benägenheten att rapportera ospecificerade olyckor eller komplikationer vid fall (t.ex. blodpropp eller lunginflammation) som underliggande dödsorsak."
             },
             "sex": [2,1]
         },
         "gastrinf": {
             "alias": {
-                    "en": "gastrointestinal infections",
-                    "sv": "magtarminfektioner"
+                "en": "gastrointestinal infections",
+                "sv": "magtarminfektioner"
             },
             "causeexpr": {
                 "07A": "A(0(1[2-46])|104)",
@@ -231,19 +231,19 @@
                 "101": "100[2-4]"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 040--043, 045--048, 571, 572; ICD-8: 000--003, 004, 006, 008, 009; ICD-9: 001--009; ICD-10: A00--A09",
-                    "sv": "ICD-6/7: 040--043, 045--048, 571, 572; ICD-8: 000--003, 004, 006, 008, 009; ICD-9: 001--009; ICD-10: A00--A09"
+                "en": "ICD-6/7: 040--043, 045--048, 571, 572; ICD-8: 000--003, 004, 006, 008, 009; ICD-9: 001--009; ICD-10: A00--A09",
+                "sv": "ICD-6/7: 040--043, 045--048, 571, 572; ICD-8: 000--003, 004, 006, 008, 009; ICD-9: 001--009; ICD-10: A00--A09"
             },
             "note": {
-                    "en": "Includes different infections of the gastrointestinal tract. The cateogry is subject to artifical trends because these conditions sometimes have been included under some categories in the chapter for disease of the digestive organs (and it is not possible to separate them from other digestive diseases with only the condensed lists).",
-                    "sv": "Inkluderar olika typer av infektioner i magtarmkanalen. Kategorin är känslig för konstlade trender genom att dessa tillstånd ibland förts till vissa kategorier i kapitlet för sjukdomar i matsmältningsorganen (och WHO:s kondenserade listor kan inte användas för att skilja ut dessa)."
+                "en": "Includes different infections of the gastrointestinal tract. The cateogry is subject to artifical trends because these conditions sometimes have been included under some categories in the chapter for disease of the digestive organs (and it is not possible to separate them from other digestive diseases with only the condensed lists).",
+                "sv": "Inkluderar olika typer av infektioner i magtarmkanalen. Kategorin är känslig för konstlade trender genom att dessa tillstånd ibland förts till vissa kategorier i kapitlet för sjukdomar i matsmältningsorganen (och WHO:s kondenserade listor kan inte användas för att skilja ut dessa)."
             },
             "sex": [2,1]
         },
         "genbact": {
             "alias": {
-                    "en": "general bacterial infections",
-                    "sv": "allmänna bakterieinfektioner"
+                "en": "general bacterial infections",
+                "sv": "allmänna bakterieinfektioner"
             },
             "causeexpr": {
                 "07A": "A(0(1[57-9]|2[0-7]|71)|11[059])",
@@ -255,19 +255,19 @@
                 "101": "10(0[7-9]|1[0-2]|59)"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 044, 050--053, 055--058, 060--062, 340, 600; ICD-8: 005, 007, 020--039, 320, 590; ICD-9: 020--041, 320--322, 590; ICD-10: A20--A49, G00, G03, N10--N12",
-                    "sv": "ICD-6/7: 044, 050--053, 055--058, 060--062, 340, 600; ICD-8: 005, 007, 020--039, 320, 590; ICD-9: 020--041, 320--322, 590; ICD-10: A20--A49, G00, G03, N10--N12"
+                "en": "ICD-6/7: 044, 050--053, 055--058, 060--062, 340, 600; ICD-8: 005, 007, 020--039, 320, 590; ICD-9: 020--041, 320--322, 590; ICD-10: A20--A49, G00, G03, N10--N12",
+                "sv": "ICD-6/7: 044, 050--053, 055--058, 060--062, 340, 600; ICD-8: 005, 007, 020--039, 320, 590; ICD-9: 020--041, 320--322, 590; ICD-10: A20--A49, G00, G03, N10--N12"
             },
             "note": {
-                    "en": "Includes sepsis and other bacterial infections in the first chapter in the ICD classifications, which are not included in other infectious categories, meningits, and kidney infections.",
-                    "sv": "Inkluderar sepsis och andra bakteriella infektioner i inledningskapitlet i ICD-versionerna som inte ingår i andra infektionskategorier, meningit och njurinfektioner."
+                "en": "Includes sepsis and other bacterial infections in the first chapter in the ICD classifications, which are not included in other infectious categories, meningits, and kidney infections.",
+                "sv": "Inkluderar sepsis och andra bakteriella infektioner i inledningskapitlet i ICD-versionerna som inte ingår i andra infektionskategorier, meningit och njurinfektioner."
             },
             "sex": [2,1]
         },
         "hd": {
             "alias": {
-                    "en": "heart disease",
-                    "sv": "hjärtsjukdom"
+                "en": "heart disease",
+                "sv": "hjärtsjukdom"
             },
             "causeexpr": {
                 "07A": "A0(79|8[0-4])",
@@ -278,19 +278,19 @@
                 "101": "106[5-8]"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 400--447; ICD-8/9: 390--429; ICD-10: I00--I51",
-                    "sv": "ICD-6/7: 400--447; ICD-8/9: 390--429; ICD-10: I00--I51"
+                "en": "ICD-6/7: 400--447; ICD-8/9: 390--429; ICD-10: I00--I51",
+                "sv": "ICD-6/7: 400--447; ICD-8/9: 390--429; ICD-10: I00--I51"
             },
             "note": {
-                    "en": "Includes conditons related to the heart, such as ischemic heart disease, hypertension, diseases of the pulmonary circulation, myocarditis, valvular heart disease and functional heart conditons (such as heart failure).",
-                    "sv": "Inkluderar hjärtrelaterade tillstånd, inklusive ischemisk hjärtsjukdom, högt blodtryck, lungkärlssjukdom, myokardit, kardiomyopati, klaffel och funktionella hjärtdiagnoser (t.ex. hjärtsvikt)."
+                "en": "Includes conditons related to the heart, such as ischemic heart disease, hypertension, diseases of the pulmonary circulation, myocarditis, valvular heart disease and functional heart conditons (such as heart failure).",
+                "sv": "Inkluderar hjärtrelaterade tillstånd, inklusive ischemisk hjärtsjukdom, högt blodtryck, lungkärlssjukdom, myokardit, kardiomyopati, klaffel och funktionella hjärtdiagnoser (t.ex. hjärtsvikt)."
             },
             "sex": [2,1]
         },
         "hiv": {
             "alias": {
-                    "en": "HIV",
-                    "sv": "HIV"
+                "en": "HIV",
+                "sv": "HIV"
             },
             "causeexpr": {
                 "09B": "B(18[45])",
@@ -300,19 +300,19 @@
                 "101": "1020"
             },
             "codedesc": {
-                    "en": "",
-                    "sv": ""
+                "en": "",
+                "sv": ""
             },
             "note": {
-                    "en": "Includes HIV/AIDS (from ICD-9).",
-                    "sv": "Inkluderar HIV/AIDS (från ICD-9)."
+                "en": "Includes HIV/AIDS (from ICD-9).",
+                "sv": "Inkluderar HIV/AIDS (från ICD-9)."
             },
             "sex": [2,1]
         },
         "ht": {
             "alias": {
-                    "en": "hypertensive disease",
-                    "sv": "hypertonisjukdom"
+                "en": "hypertensive disease",
+                "sv": "hypertonisjukdom"
             },
             "causeexpr": {
                 "07A": "A08[34]",
@@ -324,19 +324,19 @@
                 "101": "1066"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 440--447; ICD-8: 400--404; ICD-9: 401--405; ICD-10: I10--I15",
-                    "sv": "ICD-6/7: 420--422; ICD-8/9: 410--414; ICD-10: I20--I25"
+                "en": "ICD-6/7: 440--447; ICD-8: 400--404; ICD-9: 401--405; ICD-10: I10--I15",
+                "sv": "ICD-6/7: 420--422; ICD-8/9: 410--414; ICD-10: I20--I25"
             },
             "note": {
-                    "en": "Includes hypertensive disease (e.g. hypertensive heart and kidney disease).",
-                    "sv": "Inkluderar hypertonisjukdom (som hyptertensiv hjärt- och njursjukdom)."
+                "en": "Includes hypertensive disease (e.g. hypertensive heart and kidney disease).",
+                "sv": "Inkluderar hypertonisjukdom (som hyptertensiv hjärt- och njursjukdom)."
             },
             "sex": [2,1]
         },
         "ihd": {
             "alias": {
-                    "en": "ischemic heart disease",
-                    "sv": "ischemisk hjärtsjukdom"
+                "en": "ischemic heart disease",
+                "sv": "ischemisk hjärtsjukdom"
             },
             "causeexpr": {
                 "07A": "A081",
@@ -348,19 +348,19 @@
                 "101": "1067"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 420--422; ICD-8/9: 410--414; ICD-10: I20--I25",
-                    "sv": "ICD-6/7: 420--422; ICD-8/9: 410--414; ICD-10: I20--I25"
+                "en": "ICD-6/7: 420--422; ICD-8/9: 410--414; ICD-10: I20--I25",
+                "sv": "ICD-6/7: 420--422; ICD-8/9: 410--414; ICD-10: I20--I25"
             },
             "note": {
-                    "en": "Includes myocardial infarction and other conditions due to insufficient oxygen supply to the heart muscle. \"Coronary heart disease\" is often used as a more or less synonymous expression. The conditions is commonly abbreviated as IHD. This category is not defined in classifications before ICD-8: the nearest category in ICD-6/7 available from the condensed WHO lists is \"arteriosclerotic and degenerative heart diseases\". For some populations, such as Italy and Japan, this leads to significant artificial trends wit the switch to ICD-8.",
-                    "sv": "Inkluderar hjärtinfarkt och andra tillstånd som beror på otillräcklig syreförsörjning av hjärtmuskel. \"Kranskärlssjukdom\" används ofta som mer eller mindre synonymt uttryck. Den engelska förkortningen IHD (\"ischemic heart disease\") är också vanlig. Observera att begreppet inte finns i klassifikationer före ICD-8: den närmaste motsvarande kategorin i ICD-6/7, som kan tas fram utifrån de kategorier som finns tillgängliga via @whomort, är \"arteriosklerotiska och degenerativa hjärtsjukdomar\". För vissa befolkningar (t.ex. Italien och Japan) uppstår då tydliga konstlade trender vid övergången till ICD-8."
+                "en": "Includes myocardial infarction and other conditions due to insufficient oxygen supply to the heart muscle. \"Coronary heart disease\" is often used as a more or less synonymous expression. The conditions is commonly abbreviated as IHD. This category is not defined in classifications before ICD-8: the nearest category in ICD-6/7 available from the condensed WHO lists is \"arteriosclerotic and degenerative heart diseases\". For some populations, such as Italy and Japan, this leads to significant artificial trends wit the switch to ICD-8.",
+                "sv": "Inkluderar hjärtinfarkt och andra tillstånd som beror på otillräcklig syreförsörjning av hjärtmuskel. \"Kranskärlssjukdom\" används ofta som mer eller mindre synonymt uttryck. Den engelska förkortningen IHD (\"ischemic heart disease\") är också vanlig. Observera att begreppet inte finns i klassifikationer före ICD-8: den närmaste motsvarande kategorin i ICD-6/7, som kan tas fram utifrån de kategorier som finns tillgängliga via @whomort, är \"arteriosklerotiska och degenerativa hjärtsjukdomar\". För vissa befolkningar (t.ex. Italien och Japan) uppstår då tydliga konstlade trender vid övergången till ICD-8."
             },
             "sex": [2,1]
         },
-       "ihdnoami": {
+        "ihdnoami": {
             "alias": {
-                    "en": "ischemic heart disease (non-AMI if defined)",
-                    "sv": "ischemisk hjärtsjukdom (ej HI om definieriad)"
+                "en": "ischemic heart disease (non-AMI if defined)",
+                "sv": "ischemisk hjärtsjukdom (ej HI om definieriad)"
             },
             "causeexpr": {
                 "07A": "A081",
@@ -372,8 +372,8 @@
                 "101": "1067"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 420--422; ICD-8/9: 414; ICD-10: I20, I24, I25",
-                    "sv": "ICD-6/7: 420--422; ICD-8/9: 414; ICD-10: I20, I24, I25"
+                "en": "ICD-6/7: 420--422; ICD-8/9: 414; ICD-10: I20, I24, I25",
+                "sv": "ICD-6/7: 420--422; ICD-8/9: 414; ICD-10: I20, I24, I25"
             },
             "note": {
                 "en": "Includes conditions due to insufficient oxygen supply to the heart muscle (not acute myocardial infarction, when that distinction is available). \"Coronary heart disease\" is often used as a more or less synonymous expression. The conditions is commonly abbreviated as IHD. This category is not defined in classifications before ICD-8: the nearest category in ICD-6/7 available from the condensed WHO lists is \"arteriosclerotic and degenerative heart diseases\". For some populations, such as Italy and Japan, this leads to significant artificial trends wit the switch to ICD-8.",
@@ -383,8 +383,8 @@
         },
         "illdef": {
             "alias": {
-                    "en": "ill-defined cause",
-                    "sv": "illa definierade orsaker"
+                "en": "ill-defined cause",
+                "sv": "illa definierade orsaker"
             },
             "causeexpr": {
                 "07A": "A13[67]",
@@ -396,19 +396,19 @@
                 "101": "1094"
             },
             "codedesc": {
-                    "en": "ICD-6/7/8/9: 780--799; ICD-10: R00--R99",
-                    "sv": "ICD-6/7/8/9: 780--799; ICD-10: R00--R99"
+                "en": "ICD-6/7/8/9: 780--799; ICD-10: R00--R99",
+                "sv": "ICD-6/7/8/9: 780--799; ICD-10: R00--R99"
             },
             "note": {
-                    "en": "Includes codes in the second last chapter in the ICD classifications, such as deaths without any mentioned cause at all, symptom without mentioned causes, and \"senility\" (old age without mention of dementia). A high proportion of deaths in this category may indicate poor quality of the reporting, and implies that trends for other causes have to interpreted with caution. Some codes in other ICD chapters may also be regarded \"ill-defined\" when reported as underlying causes of death (such as heart failure and respiratory failure without mentioned cause). Some formally well-defined causes may in some populations be overreported so that their diagnostic meaning is watered down (such as ischemic heart disease among older people).",
-                    "sv": "Inkluderar koder i näst sista kapitlet i ICD-klassifikationerna, som dödsfall utan specificerad orsak, symptom utan angiven bakomliggande orsak och \"senilitet\" (hög ålder utan angiven demens). En hög andel dödsfall i denna kategori för en befolkning och tidsperiod kan indikera bristande kvalitet hos statistiken och innebär att trender för andra dödsorsaker måste tolkas med försiktighet. Det finns koder i andra ICD-kapitel som kan betraktas som \"illa definierade\" när de rapporteras som underliggande dödsorsaker (t.ex. hjärt- eller andningssvikt utan angiven orsak). En del formellt väldefinierade koder kan i vissa befolkningar också överrapporteras på ett sätt som urholkar deras diagnostiska mening (t.ex. ischemisk hjärtsjukdom bland äldre)."
+                "en": "Includes codes in the second last chapter in the ICD classifications, such as deaths without any mentioned cause at all, symptom without mentioned causes, and \"senility\" (old age without mention of dementia). A high proportion of deaths in this category may indicate poor quality of the reporting, and implies that trends for other causes have to interpreted with caution. Some codes in other ICD chapters may also be regarded \"ill-defined\" when reported as underlying causes of death (such as heart failure and respiratory failure without mentioned cause). Some formally well-defined causes may in some populations be overreported so that their diagnostic meaning is watered down (such as ischemic heart disease among older people).",
+                "sv": "Inkluderar koder i näst sista kapitlet i ICD-klassifikationerna, som dödsfall utan specificerad orsak, symptom utan angiven bakomliggande orsak och \"senilitet\" (hög ålder utan angiven demens). En hög andel dödsfall i denna kategori för en befolkning och tidsperiod kan indikera bristande kvalitet hos statistiken och innebär att trender för andra dödsorsaker måste tolkas med försiktighet. Det finns koder i andra ICD-kapitel som kan betraktas som \"illa definierade\" när de rapporteras som underliggande dödsorsaker (t.ex. hjärt- eller andningssvikt utan angiven orsak). En del formellt väldefinierade koder kan i vissa befolkningar också överrapporteras på ett sätt som urholkar deras diagnostiska mening (t.ex. ischemisk hjärtsjukdom bland äldre)."
             },
             "sex": [2,1]
         },
         "respinf": {
             "alias": {
-                    "en": "respiratory infections/covid-19",
-                    "sv": "luftvägsinfektioner/covid-19"
+                "en": "respiratory infections/covid-19",
+                "sv": "luftvägsinfektioner/covid-19"
             },
             "causeexpr": {
                 "07A": "A0(8[7-9]|9[0-2])",
@@ -420,19 +420,39 @@
                 "101": "1(07[3-5]|903)"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 470--500; ICD-8: 460--486; ICD-9: 460--466, 480--487; ICD-10: J00--J22",
-                    "sv": "ICD-6/7: 470--500; ICD-8: 460--486; ICD-9: 460--466, 480--487; ICD-10: J00--J22"
+                "en": "ICD-6/7: 470--500; ICD-8: 460--486; ICD-9: 460--466, 480--487; ICD-10: J00--J22",
+                "sv": "ICD-6/7: 470--500; ICD-8: 460--486; ICD-9: 460--466, 480--487; ICD-10: J00--J22"
             },
             "note": {
-                    "en": "Includes influenza, pneumonia and other respiratory infections (not tuberculosis). Often influenced by artificial trends when it comes to reporting these conditions as underlying causes of deaths.",
-                    "sv": "Inkluderar influensa, lunginflammation och andra luftvägsinfektioner (ej tuberkulos). Ofta känslig för konstlade trender när det gäller rapportering av dessa som underliggande dödsorsak."
+                "en": "Includes influenza, pneumonia and other respiratory infections (not tuberculosis). Often influenced by artificial trends when it comes to reporting these conditions as underlying causes of deaths.",
+                "sv": "Inkluderar influensa, lunginflammation och andra luftvägsinfektioner (ej tuberkulos). Ofta känslig för konstlade trender när det gäller rapportering av dessa som underliggande dödsorsak."
             },
             "sex": [2,1]
         },
+        "covid": {
+            "alias": {
+                "en": "covid-19",
+                "sv": "covid-19"
+            },
+            "causeexpr": {
+                "10": "U07",
+                "10SE": "U07",
+                "101": "1903"
+            },
+            "codedesc": {
+                "en": "ICD-10: U07",
+                "sv": "ICD-10: U07"
+            },
+            "note": {
+                "en": "Includes covid-19.",
+                "sv": "Inkluderar covid-19."
+            },
+            "sex": [2,1]
+        },      
         "inf": {
             "alias": {
-                    "en": "infection",
-                    "sv": "infektioner"
+                "en": "infection",
+                "sv": "infektioner"
             },
             "causeexpr": {
                 "07A": "<genbact>|<tb>|<stihiv>|<gastrinf>|<respinf>|<infrest>",
@@ -444,19 +464,43 @@
                 "101": "<genbact>|<tb>|<stihiv>|<gastrinf>|<respinf>|<infrest>"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 036--039, 049, 054, 059, 063--138; ICD-8: 040--089, 099--136; ICD-9: 045--088, 100--139; ICD-10: A65--B19, B25--B99",
-                    "sv": "ICD-6/7: 036--039, 049, 054, 059, 063--138; ICD-8: 040--089, 099--136; ICD-9: 045--088, 100--139; ICD-10: A65--B19, B25--B99"
+                "en": "ICD-6/7: 036--039, 049, 054, 059, 063--138; ICD-8: 040--089, 099--136; ICD-9: 045--088, 100--139; ICD-10: A65--B19, B25--B99",
+                "sv": "ICD-6/7: 036--039, 049, 054, 059, 063--138; ICD-8: 040--089, 099--136; ICD-9: 045--088, 100--139; ICD-10: A65--B19, B25--B99"
             },
             "note": {
-                    "en": "",
-                    "sv": ""
+                "en": "",
+                "sv": ""
             },
             "sex": [2,1]
         },
+        "infnocov": {
+            "alias": {
+                "en": "infection (excluding covid-19)",
+                "sv": "infektioner (utom covid-19)"
+            },
+            "causeexpr": {
+                "07A": "<genbact>|<tb>|<stihiv>|<gastrinf>|<respinf>|<infrest>",
+                "08A": "<genbact>|<tb>|<stihiv>|<gastrinf>|<respinf>|<infrest>",
+                "09B": "<genbact>|<tb>|<stihiv>|<gastrinf>|<respinf>|<infrest>",
+                "09N": "CH01|<respinf>",
+                "10": "<genbact>|<tb>|<stihiv>|<gastrinf>|<respinf>|<infrest>!<covid>",
+                "10SE": "<genbact>|<tb>|<stihiv>|<gastrinf>|<respinf>|<infrest>!<covid>",
+                "101": "<genbact>|<tb>|<stihiv>|<gastrinf>|<respinf>|<infrest>!<covid>"
+            },
+            "codedesc": {
+                "en": "ICD-6/7: 036--039, 049, 054, 059, 063--138; ICD-8: 040--089, 099--136; ICD-9: 045--088, 100--139; ICD-10: A65--B19, B25--B99",
+                "sv": "ICD-6/7: 036--039, 049, 054, 059, 063--138; ICD-8: 040--089, 099--136; ICD-9: 045--088, 100--139; ICD-10: A65--B19, B25--B99"
+            },
+            "note": {
+                "en": "",
+                "sv": ""
+            },
+            "sex": [2,1]
+        },      
         "infrest": {
             "alias": {
-                    "en": "other infections",
-                    "sv": "övriga infektioner"
+                "en": "other infections",
+                "sv": "övriga infektioner"
             },
             "causeexpr": {
                 "07A": "A0(2[8-9]|3|4[0-3])",
@@ -468,19 +512,19 @@
                 "101": "10(1[4-9]|2[1-5])"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 036--039, 049, 054, 059, 063--138; ICD-8: 040--089, 099--136; ICD-9: 045--088, 100--139; ICD-10: A65--B19, B25--B99",
-                    "sv": "ICD-6/7: 036--039, 049, 054, 059, 063--138; ICD-8: 040--089, 099--136; ICD-9: 045--088, 100--139; ICD-10: A65--B19, B25--B99"
+                "en": "ICD-6/7: 036--039, 049, 054, 059, 063--138; ICD-8: 040--089, 099--136; ICD-9: 045--088, 100--139; ICD-10: A65--B19, B25--B99",
+                "sv": "ICD-6/7: 036--039, 049, 054, 059, 063--138; ICD-8: 040--089, 099--136; ICD-9: 045--088, 100--139; ICD-10: A65--B19, B25--B99"
             },
             "note": {
-                    "en": "Includes infections in the first chapter in the ICD classifctions, except for those included in oteher infectious categories, such as different viral, parasitic and fungal infections, as well as unspecified infections. Sudden increases and decreases among, above all, younger males in some populations during the 1980s and 1990s are due to codes from this category being used for HIV infection during some periods.",
-                    "sv": "Inkluderar infektioner i inledningskapitlet i ICD-versionerna förutom de som ingår i andra infektionskategorier, som olika infektioner orsakade av virus, parasiter och svampar och ospecificerade infektioner. Dramatiska ökningar och minskningar bland framför allt yngre män i vissa befolkningar under 80- och 90-talen beror på att ospecifika koder i denna kategori använts för HIV-infektion under vissa perioder."
+                "en": "Includes infections in the first chapter in the ICD classifctions, except for those included in oteher infectious categories, such as different viral, parasitic and fungal infections, as well as unspecified infections. Sudden increases and decreases among, above all, younger males in some populations during the 1980s and 1990s are due to codes from this category being used for HIV infection during some periods.",
+                "sv": "Inkluderar infektioner i inledningskapitlet i ICD-versionerna förutom de som ingår i andra infektionskategorier, som olika infektioner orsakade av virus, parasiter och svampar och ospecificerade infektioner. Dramatiska ökningar och minskningar bland framför allt yngre män i vissa befolkningar under 80- och 90-talen beror på att ospecifika koder i denna kategori använts för HIV-infektion under vissa perioder."
             },
             "sex": [2,1]
         },
         "intc": {
             "alias": {
-                    "en": "intestinal cancer",
-                    "sv": "tarmcancer"
+                "en": "intestinal cancer",
+                "sv": "tarmcancer"
             },
             "causeexpr": {
                 "07A": "A04[7-8]",
@@ -491,19 +535,19 @@
                 "101": "1030"
             },
             "codedesc": {
-                    "en": "ICD-6/7/8/9: 152--154; ICD-10: C17--C21",
-                    "sv": "ICD-6/7/8/9: 152--154; ICD-10: C17--C21"
+                "en": "ICD-6/7/8/9: 152--154; ICD-10: C17--C21",
+                "sv": "ICD-6/7/8/9: 152--154; ICD-10: C17--C21"
             },
             "note": {
-                    "en": "Includes cancer of the small intestine, and colorectal cancer.",
-                    "sv": "Inkluderar cancer i tunn-, tjock- och ändtarm."
+                "en": "Includes cancer of the small intestine, and colorectal cancer.",
+                "sv": "Inkluderar cancer i tunn-, tjock- och ändtarm."
             },
             "sex": [2,1]
         },
         "lc": {
             "alias": {
-                    "en": "lung cancer",
-                    "sv": "lungcancer"
+                "en": "lung cancer",
+                "sv": "lungcancer"
             },
             "causeexpr": {
                 "07A": "A050",
@@ -514,19 +558,19 @@
                 "101": "1034"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 162--163; ICD-8/9: 162; ICD-10: C33--C34",
-                    "sv": "ICD-6/7: 162--163; ICD-8/9: 162; ICD-10: C33--C34"
+                "en": "ICD-6/7: 162--163; ICD-8/9: 162; ICD-10: C33--C34",
+                "sv": "ICD-6/7: 162--163; ICD-8/9: 162; ICD-10: C33--C34"
             },
             "note": {
-                    "en": "Includes cancer in the lungs, bronchi and trachea.",
-                    "sv": "Inkluderar cancer i luftstrupe och bronk."
+                "en": "Includes cancer in the lungs, bronchi and trachea.",
+                "sv": "Inkluderar cancer i luftstrupe och bronk."
             },
             "sex": [2,1]
         },
         "leuk": {
             "alias": {
-                    "en": "leukaemia",
-                    "sv": "leukemi"
+                "en": "leukaemia",
+                "sv": "leukemi"
             },
             "causeexpr": {
                 "07A": "A058",
@@ -537,19 +581,19 @@
                 "101": "1045"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 204; ICD-8: 204--207; ICD-9: 204--208; ICD-10: C91--C95",
-                    "sv": "ICD-6/7: 204; ICD-8: 204--207; ICD-9: 204--208; ICD-10: C91--C95"
+                "en": "ICD-6/7: 204; ICD-8: 204--207; ICD-9: 204--208; ICD-10: C91--C95",
+                "sv": "ICD-6/7: 204; ICD-8: 204--207; ICD-9: 204--208; ICD-10: C91--C95"
             },
             "note": {
-                    "en": "Includes acute and chronic leukaemia.",
-                    "sv": "Inkluderar akut och kronisk leukemi."
+                "en": "Includes acute and chronic leukaemia.",
+                "sv": "Inkluderar akut och kronisk leukemi."
             },
             "sex": [2,1]
         },
         "livd": {
             "alias": {
-                    "en": "liver disease",
-                    "sv": "leversjukdom"
+                "en": "liver disease",
+                "sv": "leversjukdom"
             },
             "causeexpr": {
                 "07A": "A105",
@@ -560,19 +604,19 @@
                 "101": "1080"
             },
             "codedesc": {
-                    "en": "ICD-7: 581, ICD-8: 571, ICD-9: 571, ICD-10: K70–K77",
-                    "sv": "ICD-7: 581, ICD-8: 571, ICD-9: 571, ICD-10: K70–K77"
+                "en": "ICD-7: 581, ICD-8: 571, ICD-9: 571, ICD-10: K70–K77",
+                "sv": "ICD-7: 581, ICD-8: 571, ICD-9: 571, ICD-10: K70–K77"
             },
             "note": {
-                    "en": "Cirrhosis and other diseases of the liver (excluding viral hepatitis).",
-                    "sv": "Cirros och andra leversjukdomar (ej viral hepatit)."
+                "en": "Cirrhosis and other diseases of the liver (excluding viral hepatitis).",
+                "sv": "Cirros och andra leversjukdomar (ej viral hepatit)."
             },
             "sex": [2,1]
         },
         "lymc": {
             "alias": {
-                    "en": "lymphoma/myeloma",
-                    "sv": "lymfom/myelom"
+                "en": "lymphoma/myeloma",
+                "sv": "lymfom/myelom"
             },
             "causeexpr": {
                 "07A": "A059",
@@ -583,19 +627,19 @@
                 "101": "104[34]"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 200--203, 205; ICD-8: 200--203, 208, 209; ICD-9: 200--203; ICD-10: C81--C90, C96",
-                    "sv": "ICD-6/7: 200--203, 205; ICD-8: 200--203, 208, 209; ICD-9: 200--203; ICD-10: C81--C90, C96"
+                "en": "ICD-6/7: 200--203, 205; ICD-8: 200--203, 208, 209; ICD-9: 200--203; ICD-10: C81--C90, C96",
+                "sv": "ICD-6/7: 200--203, 205; ICD-8: 200--203, 208, 209; ICD-9: 200--203; ICD-10: C81--C90, C96"
             },
             "note": {
-                    "en": "Includes lymphoma (Hodgkin and non-Hodgkin), myeloma and other malignancies of lymphoid or haematopoietic tissue, except for leukaemia.",
-                    "sv": "Inkluderar lymfom (Hodgkin och non-Hodgkin), myelom och andra typer av cancer i lymfatisk eller blodbildande vävnad utom leukemi."
+                "en": "Includes lymphoma (Hodgkin and non-Hodgkin), myeloma and other malignancies of lymphoid or haematopoietic tissue, except for leukaemia.",
+                "sv": "Inkluderar lymfom (Hodgkin och non-Hodgkin), myelom och andra typer av cancer i lymfatisk eller blodbildande vävnad utom leukemi."
             },
             "sex": [2,1]
         },
         "neurdeg": {
             "alias": {
-                    "en": "dementia/neurodegenerative disease",
-                    "sv": "demens/neurodegenerativ"
+                "en": "dementia/neurodegenerative disease",
+                "sv": "demens/neurodegenerativ"
             },
             "causeexpr": {
                 "07A": "A0(67|7[28])",
@@ -606,19 +650,19 @@
                 "101": "10(55|6[01])"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 300--309, 341--352, 354--369, 380--384, 386, 388--390, 394--398; ICD-8: 290--299, 321--344, 346--358, 370--373, 376--380, 384--389; ICD-9: 290, 330--340; ICD-10: F01--F09, G10--G37 (för lista 101 F01--F99, G04--G98)",
-                    "sv": "ICD-6/7: 300--309, 341--352, 354--369, 380--384, 386, 388--390, 394--398; ICD-8: 290--299, 321--344, 346--358, 370--373, 376--380, 384--389; ICD-9: 290, 330--340; ICD-10: F01--F09, G10--G37 (för lista 101 F01--F99, G04--G98)"
+                "en": "ICD-6/7: 300--309, 341--352, 354--369, 380--384, 386, 388--390, 394--398; ICD-8: 290--299, 321--344, 346--358, 370--373, 376--380, 384--389; ICD-9: 290, 330--340; ICD-10: F01--F09, G10--G37 (för lista 101 F01--F99, G04--G98)",
+                "sv": "ICD-6/7: 300--309, 341--352, 354--369, 380--384, 386, 388--390, 394--398; ICD-8: 290--299, 321--344, 346--358, 370--373, 376--380, 384--389; ICD-9: 290, 330--340; ICD-10: F01--F09, G10--G37 (för lista 101 F01--F99, G04--G98)"
             },
             "note": {
-                    "en": "Includes neurodegnerative diseases (like Alzheimer, Parkinson, mutliple sclerosis), including so-called organic mental disorders (mostly dementia) in the chapter for mental disorders. Increases in the proprtion of deaths among old people during later decades are mainly due to a tendency to more often report dementia rather than e.g. pneumonia or atherosclerosis as underlying cause of death (compare the estimations of trends in dementia mortality from the 1980s based on prevalence, available from @ihmecodviz).",
-                    "sv": "Inkluderar neurodegenerativa sjukdomar (alzheimers, parkinsons, multipel skleros m.m.), inklusive sådana som räknas till s.k. organiska störningar i kapitlet för psykiatriska diagnoser. Ökningar av andelen dödsfall bland äldre på senare år är till stor del relaterade till ökad benägenhet att rapportera demensrelaterade tillstånd snarare än t.ex. lunginflammation eller ateroskleros som underliggande dödsorsak (jämför med de uppskattningar av trender för demens från 1980-talet baserade på prevalens som finns tillgängliga via @ihmecodviz)."
+                "en": "Includes neurodegnerative diseases (like Alzheimer, Parkinson, mutliple sclerosis), including so-called organic mental disorders (mostly dementia) in the chapter for mental disorders. Increases in the proprtion of deaths among old people during later decades are mainly due to a tendency to more often report dementia rather than e.g. pneumonia or atherosclerosis as underlying cause of death (compare the estimations of trends in dementia mortality from the 1980s based on prevalence, available from @ihmecodviz).",
+                "sv": "Inkluderar neurodegenerativa sjukdomar (alzheimers, parkinsons, multipel skleros m.m.), inklusive sådana som räknas till s.k. organiska störningar i kapitlet för psykiatriska diagnoser. Ökningar av andelen dödsfall bland äldre på senare år är till stor del relaterade till ökad benägenhet att rapportera demensrelaterade tillstånd snarare än t.ex. lunginflammation eller ateroskleros som underliggande dödsorsak (jämför med de uppskattningar av trender för demens från 1980-talet baserade på prevalens som finns tillgängliga via @ihmecodviz)."
             },
             "sex": [2,1]
         },
         "neurdegnovd": {
             "alias": {
-                    "en": "dementia/neurodegenerative disease, non-VD",
-                    "sv": "demens/neurodegenerativ ej VD"
+                "en": "dementia/neurodegenerative disease, non-VD",
+                "sv": "demens/neurodegenerativ ej VD"
             },
             "causeexpr": {
                 "07A": "A0(67|7[28])",
@@ -629,19 +673,19 @@
                 "101": "10(55|6[01])"
             },
             "codedesc": {
-                    "en": "Identical with the category for dementia and neurodegnerative diseases, except that it excludes F01, vascular dementia, for ICD-10 with detailed list.",
-                    "sv": "Är identisk med kategorin för demens och neurodegenerativa sjukdomar, men inkluderar inte F01, vaskulär demens för ICD-10 med detaljlista."
+                "en": "Identical with the category for dementia and neurodegnerative diseases, except that it excludes F01, vascular dementia, for ICD-10 with detailed list.",
+                "sv": "Är identisk med kategorin för demens och neurodegenerativa sjukdomar, men inkluderar inte F01, vaskulär demens för ICD-10 med detaljlista."
             },
             "note": {
-                    "en": "This category has been includes to have a defintion of dementia and neurodegnerative diseases disjoint with stroke for ICD-10.",
-                    "sv": "Har tagits med för att få en defintion av demens/neurodegnerativ sjukdom som inte överlappar med slaganfall för ICD-10."
+                "en": "This category has been includes to have a defintion of dementia and neurodegnerative diseases disjoint with stroke for ICD-10.",
+                "sv": "Har tagits med för att få en defintion av demens/neurodegnerativ sjukdom som inte överlappar med slaganfall för ICD-10."
             },
             "sex": [2,1]
         },
         "neurt": {
             "alias": {
-                    "en": "tumors of the nervous system",
-                    "sv": "tumörer nervsystem"
+                "en": "tumors of the nervous system",
+                "sv": "tumörer nervsystem"
             },
             "causeexpr": {
                 "07A": "193",
@@ -652,20 +696,20 @@
                 "101": "1042"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 193; ICD-8: 191--192, 225, 238; ICD-9: 191--192, 225, 237; ICD-10: C70--C72, D32--D33, D42--D43 (for list 101 only C70--C72)",
-                    "sv": "ICD-6/7: 193; ICD-8: 191--192, 225, 238; ICD-9: 191--192, 225, 237; ICD-10: C70--C72, D32--D33, D42--D43 (för lista 101 enbart C70--C72)"
+                "en": "ICD-6/7: 193; ICD-8: 191--192, 225, 238; ICD-9: 191--192, 225, 237; ICD-10: C70--C72, D32--D33, D42--D43 (for list 101 only C70--C72)",
+                "sv": "ICD-6/7: 193; ICD-8: 191--192, 225, 238; ICD-9: 191--192, 225, 237; ICD-10: C70--C72, D32--D33, D42--D43 (för lista 101 enbart C70--C72)"
             },
             "note": {
-                    "en": "Includes tumors in the brain and other parts of the nervous system.",
-                    "sv": "Inkluderar tumörer i hjärnan och andra delar av nervsystemet."
+                "en": "Includes tumors in the brain and other parts of the nervous system.",
+                "sv": "Inkluderar tumörer i hjärnan och andra delar av nervsystemet."
             }
             ,
             "sex": [2,1]
         },
         "othath": {
             "alias": {
-                    "en": "arterial disease except for IHD and stroke",
-                    "sv": "artärsjukdom utom IHD/slaganfall"
+                "en": "arterial disease except for IHD and stroke",
+                "sv": "artärsjukdom utom IHD/slaganfall"
             },
             "causeexpr": {
                 "07A": "A085",
@@ -677,19 +721,19 @@
                 "101": "1070"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 450--456; ICD-8/9: 440--448; ICD-10: I70--I79",
-                    "sv": "ICD-6/7: 450--456; ICD-8/9: 440--448; ICD-10: I70--I79"
+                "en": "ICD-6/7: 450--456; ICD-8/9: 440--448; ICD-10: I70--I79",
+                "sv": "ICD-6/7: 450--456; ICD-8/9: 440--448; ICD-10: I70--I79"
             },
             "note": {
-                    "en": "Includes arterial diseases not included in ischemic heart disease and storke (arteriosclerosis outside the brain or heart, or with general or unspecified location, aortic aneurysm). Excludes hypertensive disease.",
-                    "sv": "Inkluderar artärsjukdomar som inte ingår i grupperna ischemisk hjärtsjukdom och slaganfall (alltså arteiroskleros utanför hjärtat eller hjärnan eller i ospecificerade delar av artärsystemet, aortabråck etc.). Inkluderar inte högt blodtryck."
+                "en": "Includes arterial diseases not included in ischemic heart disease and storke (arteriosclerosis outside the brain or heart, or with general or unspecified location, aortic aneurysm). Excludes hypertensive disease.",
+                "sv": "Inkluderar artärsjukdomar som inte ingår i grupperna ischemisk hjärtsjukdom och slaganfall (alltså arteiroskleros utanför hjärtat eller hjärnan eller i ospecificerade delar av artärsystemet, aortabråck etc.). Inkluderar inte högt blodtryck."
             },
             "sex": [2,1]
         },
         "othcirc": {
             "alias": {
-                    "en": "other circulatory disease",
-                    "sv": "annan cirkulation"
+                "en": "other circulatory disease",
+                "sv": "annan cirkulation"
             },
             "causeexpr": {
                 "07A": "A086",
@@ -701,19 +745,19 @@
                 "101": "1071"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 450--456; ICD-8/9: 440--448; ICD-10: I70--I79",
-                    "sv": "ICD-6/7: 450--456; ICD-8/9: 440--448; ICD-10: I70--I79"
+                "en": "ICD-6/7: 450--456; ICD-8/9: 440--448; ICD-10: I70--I79",
+                "sv": "ICD-6/7: 450--456; ICD-8/9: 440--448; ICD-10: I70--I79"
             },
             "note": {
-                    "en": "Includes circulatory diseases not included in other circulatory categories.",
-                    "sv": ""
+                "en": "Includes circulatory diseases not included in other circulatory categories.",
+                "sv": ""
             },
             "sex": [2,1]
         },
         "othdis": {
             "alias": {
-                    "en": "other disease",
-                    "sv": "annan sjukdom"
+                "en": "other disease",
+                "sv": "annan sjukdom"
             },
             "causeexpr": {
                 "07A": "A[01]!<all>|<circ>|<neurdegnovd>|<diab>|<chresp>|<inf>|<illdef>|<ext>|<tum>",
@@ -725,19 +769,19 @@
                 "101": "10(5[34]|6[23]|78|8[2347]|9[23])"
             },
             "codedesc": {
-                    "en": "",
-                    "sv": ""
+                "en": "",
+                "sv": ""
             },
             "note": {
-                    "en": "Includes diseases not included in other categories.",
-                    "sv": ""
+                "en": "Includes diseases not included in other categories.",
+                "sv": ""
             },
             "sex": [2,1]
         },
         "othhd": {
             "alias": {
-                    "en": "other heart disease",
-                    "sv": "annan hjärtsjukdom"
+                "en": "other heart disease",
+                "sv": "annan hjärtsjukdom"
             },
             "causeexpr": {
                 "07A": "A0(79|8[02-4])",
@@ -748,19 +792,19 @@
                 "101": "106[568]"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 400--447; ICD-8/9: 390--429; ICD-10: I00--I51",
-                    "sv": "ICD-6/7: 400--447; ICD-8/9: 390--429; ICD-10: I00--I51"
+                "en": "ICD-6/7: 400--447; ICD-8/9: 390--429; ICD-10: I00--I51",
+                "sv": "ICD-6/7: 400--447; ICD-8/9: 390--429; ICD-10: I00--I51"
             },
             "note": {
-                    "en": "Includes conditons related to the heart except for ischemic heart disease.",
-                    "sv": "Inkluderar hjärtrelaterade tillstånd exklusive ischemisk hjärtsjukdom."
+                "en": "Includes conditons related to the heart except for ischemic heart disease.",
+                "sv": "Inkluderar hjärtrelaterade tillstånd exklusive ischemisk hjärtsjukdom."
             },
             "sex": [2,1]
         },
         "othhdnoht": {
             "alias": {
-                    "en": "other heart disease",
-                    "sv": "annan hjärtsjukdom"
+                "en": "other heart disease",
+                "sv": "annan hjärtsjukdom"
             },
             "causeexpr": {
                 "07A": "A0(79|8[02])",
@@ -772,19 +816,19 @@
                 "101": "106[58]"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 400--416, 430--434; ICD-8/9: 390--398, 415--429; ICD-10: I00--I09, I26--I51",
-                    "sv": "ICD-6/7: 400--416, 430--434; ICD-8/9: 390--398, 415--429; ICD-10: I00--I09, I26--I51"
+                "en": "ICD-6/7: 400--416, 430--434; ICD-8/9: 390--398, 415--429; ICD-10: I00--I09, I26--I51",
+                "sv": "ICD-6/7: 400--416, 430--434; ICD-8/9: 390--398, 415--429; ICD-10: I00--I09, I26--I51"
             },
             "note": {
-                    "en": "Includes conditons related to the heart except for ischemic and hypertensive heart disease.",
-                    "sv": "Inkluderar hjärtrelaterade tillstånd exklusive ischemisk eller hypertensiv hjärtsjukdom."
+                "en": "Includes conditons related to the heart except for ischemic and hypertensive heart disease.",
+                "sv": "Inkluderar hjärtrelaterade tillstånd exklusive ischemisk eller hypertensiv hjärtsjukdom."
             },
             "sex": [2,1]
         },
         "ovac": {
             "alias": {
-                    "en": "ovarian cancer",
-                    "sv": "äggstockscancer"
+                "en": "ovarian cancer",
+                "sv": "äggstockscancer"
             },
             "causeexpr": {
                 "07A": 175,
@@ -795,19 +839,19 @@
                 "101": "1039"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 175; ICD-8/9: 183; ICD-10: C56",
-                    "sv": "ICD-6/7: 175; ICD-8/9: 183; ICD-10: C56"
+                "en": "ICD-6/7: 175; ICD-8/9: 183; ICD-10: C56",
+                "sv": "ICD-6/7: 175; ICD-8/9: 183; ICD-10: C56"
             },
             "note": {
-                    "en": "Includes ovarian cancer.",
-                    "sv": "Inkluderar cancer i äggstock."
+                "en": "Includes ovarian cancer.",
+                "sv": "Inkluderar cancer i äggstock."
             },
             "sex": 2
         },
         "panc": {
             "alias": {
-                    "en": "pancreatic cancer",
-                    "sv": "pankreascancer"
+                "en": "pancreatic cancer",
+                "sv": "pankreascancer"
             },
             "causeexpr": {
                 "07A": "157",
@@ -818,19 +862,19 @@
                 "101": "1032"
             },
             "codedesc": {
-                    "en": "ICD-6/7/8/9: 157; ICD-10: C25",
-                    "sv": "ICD-6/7/8/9: 157; ICD-10: C25"
+                "en": "ICD-6/7/8/9: 157; ICD-10: C25",
+                "sv": "ICD-6/7/8/9: 157; ICD-10: C25"
             },
             "note": {
-                    "en": "Includes pancreatic cancer.",
-                    "sv": "Inkluderar cancer i bukspottskörteln."
+                "en": "Includes pancreatic cancer.",
+                "sv": "Inkluderar cancer i bukspottskörteln."
             },
             "sex": [2,1]
         },
         "pc": {
             "alias": {
-                    "en": "prostate cancer",
-                    "sv": "prostatacancer"
+                "en": "prostate cancer",
+                "sv": "prostatacancer"
             },
             "causeexpr": {
                 "07A": "A054",
@@ -841,19 +885,19 @@
                 "101": "1040"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 177; ICD-8/9: 185; ICD-10: C61",
-                    "sv": "ICD-6/7: 177; ICD-8/9: 185; ICD-10: C61"
+                "en": "ICD-6/7: 177; ICD-8/9: 185; ICD-10: C61",
+                "sv": "ICD-6/7: 177; ICD-8/9: 185; ICD-10: C61"
             },
             "note": {
-                    "en": "Ages below 45 are excluded because the cases are too few.",
-                    "sv": "Inkluderar inte åldersgrupper under 45 år på grund av alltför få fall."
+                "en": "Ages below 45 are excluded because the cases are too few.",
+                "sv": "Inkluderar inte åldersgrupper under 45 år på grund av alltför få fall."
             },
             "sex": 1
         },
         "sc": {
             "alias": {
-                    "en": "stomach cancer",
-                    "sv": "magsäckscancer"
+                "en": "stomach cancer",
+                "sv": "magsäckscancer"
             },
             "causeexpr": {
                 "07A": "A046",
@@ -864,19 +908,19 @@
                 "101": "1029"
             },
             "codedesc": {
-                    "en": "ICD-6/78/9: 151; ICD-10: C16",
-                    "sv": "ICD-6/78/9: 151; ICD-10: C16"
+                "en": "ICD-6/78/9: 151; ICD-10: C16",
+                "sv": "ICD-6/78/9: 151; ICD-10: C16"
             },
             "note": {
-                    "en": "Includes stomach cancer.",
-                    "sv": "Inkluderar cancer i magsäck."
+                "en": "Includes stomach cancer.",
+                "sv": "Inkluderar cancer i magsäck."
             },
             "sex": [2,1]
         },
         "stihiv": {
             "alias": {
-                    "en": "sexually transmitted diseases/HIV",
-                    "sv": "könssjukdomar/HIV"
+                "en": "sexually transmitted diseases/HIV",
+                "sv": "könssjukdomar/HIV"
             },
             "causeexpr": {
                 "07A": "A0(0[6-9]|1[0-1])",
@@ -888,19 +932,19 @@
                 "101": "1013|<hiv>"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 020--035; ICD-8: 090--098; ICD-9: 090--099, 279.5, 279.6; ICD-10: A50--A64, B20--B24",
-                    "sv": "ICD-6/7: 020--035; ICD-8: 090--098; ICD-9: 090--099, 279.5, 279.6; ICD-10: A50--A64, B20--B24"
+                "en": "ICD-6/7: 020--035; ICD-8: 090--098; ICD-9: 090--099, 279.5, 279.6; ICD-10: A50--A64, B20--B24",
+                "sv": "ICD-6/7: 020--035; ICD-8: 090--098; ICD-9: 090--099, 279.5, 279.6; ICD-10: A50--A64, B20--B24"
             },
             "note": {
-                    "en": "Includes syphilis and other predominantly sexually transmitted infections and HIV/AIDS (from ICD-9).",
-                    "sv": "Inkluderar syfilis och andra infektioner som huvudsakligen överförs sexuellt samt HIV/AIDS (från ICD-9)."
+                "en": "Includes syphilis and other predominantly sexually transmitted infections and HIV/AIDS (from ICD-9).",
+                "sv": "Inkluderar syfilis och andra infektioner som huvudsakligen överförs sexuellt samt HIV/AIDS (från ICD-9)."
             },
             "sex": [2,1]
         },
         "str": {
             "alias": {
-                    "en": "stroke",
-                    "sv": "slaganfall"
+                "en": "stroke",
+                "sv": "slaganfall"
             },
             "causeexpr": {
                 "07A": "A070",
@@ -912,19 +956,19 @@
                 "101": "1069"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 330--334; ICD-8/9: 430--438; ICD-10: I60--I69",
-                    "sv": "ICD-6/7: 330--334; ICD-8/9: 430--438; ICD-10: I60--I69"
+                "en": "ICD-6/7: 330--334; ICD-8/9: 430--438; ICD-10: I60--I69",
+                "sv": "ICD-6/7: 330--334; ICD-8/9: 430--438; ICD-10: I60--I69"
             },
             "note": {
-                    "en": "Includes cerebral haemorrhage, cerebral infarction and other cerebrovascular diseases. For ICD-10 with detailed list, vascular dementia is also included.",
-                    "sv": "Inkluderar hjärnblödning, hjärninfarkt och andra sjukdomar i hjärnans blodkärl. För ICD-10 inkluderas även vaskulär demens."
+                "en": "Includes cerebral haemorrhage, cerebral infarction and other cerebrovascular diseases. For ICD-10 with detailed list, vascular dementia is also included.",
+                "sv": "Inkluderar hjärnblödning, hjärninfarkt och andra sjukdomar i hjärnans blodkärl. För ICD-10 inkluderas även vaskulär demens."
             },
             "sex": [2,1]
         },
         "strnovd": {
             "alias": {
-                    "en": "stroke (non-VD)",
-                    "sv": "slaganfall (ej VD)"
+                "en": "stroke (non-VD)",
+                "sv": "slaganfall (ej VD)"
             },
             "causeexpr": {
                 "07A": "A070",
@@ -936,19 +980,19 @@
                 "101": "1069"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 330--334; ICD-8/9: 430--438; ICD-10: F01, I60--I69",
-                    "sv": "ICD-6/7: 330--334; ICD-8/9: 430--438; ICD-10: F01, I60--I69"
+                "en": "ICD-6/7: 330--334; ICD-8/9: 430--438; ICD-10: F01, I60--I69",
+                "sv": "ICD-6/7: 330--334; ICD-8/9: 430--438; ICD-10: F01, I60--I69"
             },
             "note": {
-                    "en": "Includes cerebral haemorrhage, cerebral infarction and other cerebrovascular diseases.",
-                    "sv": "Inkluderar hjärnblödning, hjärninfarkt och andra sjukdomar i hjärnans blodkärl.."
+                "en": "Includes cerebral haemorrhage, cerebral infarction and other cerebrovascular diseases.",
+                "sv": "Inkluderar hjärnblödning, hjärninfarkt och andra sjukdomar i hjärnans blodkärl.."
             },
             "sex": [2,1]
         },
         "sui": {
             "alias": {
-                    "en": "suicide",
-                    "sv": "självmord"
+                "en": "suicide",
+                "sv": "självmord"
             },
             "causeexpr": {
                 "07A": "A148",
@@ -959,19 +1003,19 @@
                 "101": "1101"
             },
             "codedesc": {
-                    "en": "ICD-6/7: E963, E970--E979; ICD-8/9: E950--E959; ICD-10: X60--X84",
-                    "sv": "ICD-6/7: E963, E970--E979; ICD-8/9: E950--E959; ICD-10: X60--X84"
+                "en": "ICD-6/7: E963, E970--E979; ICD-8/9: E950--E959; ICD-10: X60--X84",
+                "sv": "ICD-6/7: E963, E970--E979; ICD-8/9: E950--E959; ICD-10: X60--X84"
             },
             "note": {
-                    "en": "Includes also cases with underlying mental disorder, such as depression. Does not include events of undetermined intent. Trends may be influenced by propensity of reporting suicide.",
-                    "sv": "Inkluderar även fall med bakomliggande psykisk sjukdom (t.ex. depression). Inkluderar inte fall med oklar avsikt. Trender kan påverkas av benägenheten att rapportera självmord."
+                "en": "Includes also cases with underlying mental disorder, such as depression. Does not include events of undetermined intent. Trends may be influenced by propensity of reporting suicide.",
+                "sv": "Inkluderar även fall med bakomliggande psykisk sjukdom (t.ex. depression). Inkluderar inte fall med oklar avsikt. Trender kan påverkas av benägenheten att rapportera självmord."
             },
             "sex": [2,1]
         },
         "tb": {
             "alias": {
-                    "en": "tuberculosis",
-                    "sv": "tuberkulos"
+                "en": "tuberculosis",
+                "sv": "tuberkulos"
             },
             "causeexpr": {
                 "07A": "A00[1-5]",
@@ -983,19 +1027,19 @@
                 "101": "100[5-6]"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 001--019; ICD-8: 010--019; ICD-9: 010--018; ICD-10: A15--A19",
-                    "sv": "ICD-6/7: 001--019; ICD-8: 010--019; ICD-9: 010--018; ICD-10: A15--A19"
+                "en": "ICD-6/7: 001--019; ICD-8: 010--019; ICD-9: 010--018; ICD-10: A15--A19",
+                "sv": "ICD-6/7: 001--019; ICD-8: 010--019; ICD-9: 010--018; ICD-10: A15--A19"
             },
             "note": {
-                    "en": "Includes pulmonary tuberculosis, as well as other forms.",
-                    "sv": "Inkluderar lungtuberkulos och andra former av tuberkulos."
+                "en": "Includes pulmonary tuberculosis, as well as other forms.",
+                "sv": "Inkluderar lungtuberkulos och andra former av tuberkulos."
             },
             "sex": [2,1]
         },
         "tracc": {
             "alias": {
-                    "en": "transport accidents",
-                    "sv": "transportolyckor"
+                "en": "transport accidents",
+                "sv": "transportolyckor"
             },
             "causeexpr": {
                 "07A": "A13[8-9]",
@@ -1006,19 +1050,19 @@
                 "101": "1096"
             },
             "codedesc": {
-                    "en": "ICD-6/7: E800--E866; ICD-8: E800--E845; ICD-9: E800--E848; ICD-10: V01--V99",
-                    "sv": "ICD-6/7: E800--E866; ICD-8: E800--E845; ICD-9: E800--E848; ICD-10: V01--V99"
+                "en": "ICD-6/7: E800--E866; ICD-8: E800--E845; ICD-9: E800--E848; ICD-10: V01--V99",
+                "sv": "ICD-6/7: E800--E866; ICD-8: E800--E845; ICD-9: E800--E848; ICD-10: V01--V99"
             },
             "note": {
-                    "en": "Includes accidents with motor vehicles and other kinds of transprot accidents.",
-                    "sv": "Inkluderar motorfordonsolyckor och andra typer av transportolyckor."
+                "en": "Includes accidents with motor vehicles and other kinds of transprot accidents.",
+                "sv": "Inkluderar motorfordonsolyckor och andra typer av transportolyckor."
             },
             "sex": [2,1]
         },
         "tum": {
             "alias": {
-                    "en": "neoplasms",
-                    "sv": "tumörer"
+                "en": "neoplasms",
+                "sv": "tumörer"
             },
             "causeexpr": {
                 "07A": "A0(4[4-9]|5|60)",
@@ -1030,19 +1074,19 @@
                 "101": "1026"
             },
             "codedesc": {
-                    "en": "ICD-6/7/8/9: 140--239; ICD-10: C00--D48",
-                    "sv": "ICD-6/7/8/9: 140--239; ICD-10: C00--D48"
+                "en": "ICD-6/7/8/9: 140--239; ICD-10: C00--D48",
+                "sv": "ICD-6/7/8/9: 140--239; ICD-10: C00--D48"
             },
             "note": {
-                    "en": "Includes malignant as well as benign and unspecified neoplasms.",
-                    "sv": "Inkluderar cancer, plus benigna och ospecificerade tumörer."
+                "en": "Includes malignant as well as benign and unspecified neoplasms.",
+                "sv": "Inkluderar cancer, plus benigna och ospecificerade tumörer."
             },
             "sex": [2,1]
         },
         "utc": {
             "alias": {
-                    "en": "uterine non-cervical cancer",
-                    "sv": "livmodercancer ej cervix"
+                "en": "uterine non-cervical cancer",
+                "sv": "livmodercancer ej cervix"
             },
             "causeexpr": {
                 "07A": "A053",
@@ -1053,42 +1097,42 @@
                 "101": "1038"
             },
             "codedesc": {
-                    "en": "ICD-6/7: 172--174; ICD-8/9: 181--182; ICD-10: C54--C55, C58",
-                    "sv": "ICD-6/7: 172--174; ICD-8/9: 181--182; ICD-10: C54--C55, C58"
+                "en": "ICD-6/7: 172--174; ICD-8/9: 181--182; ICD-10: C54--C55, C58",
+                "sv": "ICD-6/7: 172--174; ICD-8/9: 181--182; ICD-10: C54--C55, C58"
             },
             "note": {
-                    "en": "Includes cancer of corpus uteri, placenta and unspecified part of uterus (which may include some cases of cervical cancer).",
-                    "sv": "Inkluderar cancer i livmoderkropp, moderkaka eller ospecificerad del av livmoder (vilket kan inkludera en del fall av ofullständigt klassificerad cervixcancer)."
+                "en": "Includes cancer of corpus uteri, placenta and unspecified part of uterus (which may include some cases of cervical cancer).",
+                "sv": "Inkluderar cancer i livmoderkropp, moderkaka eller ospecificerad del av livmoder (vilket kan inkludera en del fall av ofullständigt klassificerad cervixcancer)."
             },
             "sex": 2
         },
         "vd": {
             "alias": {
-                    "en": "vascular dementia",
-                    "sv": "vaskulär demens"
+                "en": "vascular dementia",
+                "sv": "vaskulär demens"
             },
             "causeexpr": {
                 "10": "F01",
                 "10SE": "F01"
             },
             "codedesc": {
-                    "en": "ICD-10: F01",
-                    "sv": "ICD-10: F01"
+                "en": "ICD-10: F01",
+                "sv": "ICD-10: F01"
             },
             "note": {
-                    "en": "Includes vascular dementia.",
-                    "sv": "Inkluderar vaskulär demens."
+                "en": "Includes vascular dementia.",
+                "sv": "Inkluderar vaskulär demens."
             },
             "sex": [2,1]
         }
     },
     "listexpr": {
-            "07A": "07A",
-            "08A": "08A",
-            "09B": "09[AB]",
-            "09N": "09N",
-            "101": "101",
-            "10SE": "10SE",
-            "10": "10(M|[34])"
+        "07A": "07A",
+        "08A": "08A",
+        "09B": "09[AB]",
+        "09N": "09N",
+        "101": "101",
+        "10SE": "10SE",
+        "10": "10(M|[34])"
     }
 }
