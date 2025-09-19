@@ -2,6 +2,8 @@ BEGIN {
     FS = ","
     print "ctry,yr,li,age,sex,ca1,ca2,rat"
     li = "10SE"
+    split(ca1, cas1, "!")
+    split(ca2, cas2, "!")
     regn[0] = ""
     regn[1] = 110
     regn[3] = 121
@@ -26,11 +28,11 @@ BEGIN {
     regn[25] = 332
 }
 
-$4~ca1 {
+$4~cas1[1] && (length(cas1[2])==0 || $4!~cas1[2]) {
     ca1n[$2,$3,$5,$6] += $7
 }
 
-$4~ca2 {
+$4~cas2[1] && (length(cas2[2])==0 || $4!~cas2[2]) {
     ca2n[$2,$3,$5,$6] += $7
 }
 
