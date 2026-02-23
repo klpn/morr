@@ -58,6 +58,11 @@ caframe <- function(ctry, ca1, ca2) {
                 pipestr <- sprintf("./propyrs_sdb.sh \"%s\" \"%s\"", ca1e, ca2e)
             else
                 pipestr <- NA
+        } else if (ctry=="SCB") {
+            if (grepl("SCB", li))
+                pipestr <- sprintf("./propyrs_scb.sh \"%s\" \"%s\"", ca1e, ca2e)
+            else
+                pipestr <- NA
         } else {
             pipestr <- sprintf("./propyrs_ctry.sh %s \"%s\" \"%s\" \"%s\"",
                                ctry, ca1e, ca2e, le)
@@ -74,7 +79,7 @@ caframe <- function(ctry, ca1, ca2) {
 #' @description
 #' If a CSV file with matching name exists in the extdata subdirectory, it will be used.
 #' Otherwise, the result will be saved to such a file, which can be re-used to avoid
-#' the relatively computing-intensive calculations with regular expressions on the
+#' the relatively compute-intensive calculations with regular expressions on the
 #' WHO data files.
 #' 
 #' @param ctry WHO region code (use "all" for all regions).
@@ -88,6 +93,8 @@ ctry_caf <- function(ctry, ca1, ca2) {
     caall <- sprintf("%s-all", cacomb)
     if (grepl("SE", ctry))
         sctry <- "SE"
+    else if (grepl("SCB", ctry))
+        sctry <- "SCB"
     else
         sctry <- ctry
     if (grepl("all", ctry))

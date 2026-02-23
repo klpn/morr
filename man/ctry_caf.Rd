@@ -16,7 +16,7 @@ ctry_caf(ctry, ca1, ca2)
 \description{
 If a CSV file with matching name exists in the extdata subdirectory, it will be used.
 Otherwise, the result will be saved to such a file, which can be re-used to avoid
-the relatively computing-intensive calculations with regular expressions on the
+the relatively compute-intensive calculations with regular expressions on the
 WHO data files.
 }
 \examples{
