@@ -54,6 +54,8 @@ caframe <- function(ctry, ca1, ca2) {
             if (!grepl("SE|SCB", li))
                 pipestr <- sprintf("./propyrs_ctry.sh \"[0-9]\" \"%s\" \"%s\" \"%s\"",
                                    ca1e, ca2e, le)
+            else
+                pipestr <- NA
         } else if (ctry=="SE") {
             if (grepl("SE", li))
                 pipestr <- sprintf("./propyrs_sdb.sh \"%s\" \"%s\"", ca1e, ca2e)
@@ -68,6 +70,8 @@ caframe <- function(ctry, ca1, ca2) {
             if (!grepl("SE|SCB", li))
                 pipestr <- sprintf("./propyrs_ctry.sh %s \"%s\" \"%s\" \"%s\"",
                                    ctry, ca1e, ca2e, le)
+            else
+                pipestr <- NA
         }
         if (!is.na(pipestr))
             caf <- bind_rows(caf, read.csv(pipe(pipestr)))
