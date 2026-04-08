@@ -51,8 +51,9 @@ caframe <- function(ctry, ca1, ca2) {
         else
             ca2e <- ce.expand(miconf[["causes"]][[ca2]][["causeexpr"]][[li]], li)
         if (ctry=="all") {
-            pipestr <- sprintf("./propyrs_ctry.sh \"[0-9]\" \"%s\" \"%s\" \"%s\"",
-                               ca1e, ca2e, le)
+            if (!grepl("SE|SCB", li))
+                pipestr <- sprintf("./propyrs_ctry.sh \"[0-9]\" \"%s\" \"%s\" \"%s\"",
+                                   ca1e, ca2e, le)
         } else if (ctry=="SE") {
             if (grepl("SE", li))
                 pipestr <- sprintf("./propyrs_sdb.sh \"%s\" \"%s\"", ca1e, ca2e)
@@ -64,8 +65,9 @@ caframe <- function(ctry, ca1, ca2) {
             else
                 pipestr <- NA
         } else {
-            pipestr <- sprintf("./propyrs_ctry.sh %s \"%s\" \"%s\" \"%s\"",
-                               ctry, ca1e, ca2e, le)
+            if (!grepl("SE|SCB", li))
+                pipestr <- sprintf("./propyrs_ctry.sh %s \"%s\" \"%s\" \"%s\"",
+                                   ctry, ca1e, ca2e, le)
         }
         if (!is.na(pipestr))
             caf <- bind_rows(caf, read.csv(pipe(pipestr)))

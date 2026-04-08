@@ -135,7 +135,7 @@
                 "09N": "CH07",
                 "10": "I|F01",
                 "10SE": "I|F01",
-                "SCB": "<hd>|<str>|<othcirc>",
+                "SCB": "<hd>|<strnovd>|<othcirc>",
                 "101": "1064"
             },
             "codedesc": {
