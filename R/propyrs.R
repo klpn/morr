@@ -231,6 +231,7 @@ thrctries <- function(caf, thr, nthr, tsex, tage) {
     ctrt <- cafi |> filter(ca1/ca2 >= thr) |> group_by(ctry) |>
         summarise(count = n(), yr_min = min(yr), yr_max = max(yr))
     ctrnt <- inner_join(ctrn, ctrt, by = "ctry")
-    ctrnt$name <- map_chr(ctrnt$ctry, function(x) ctries[[sprintf("%s", x)]][["name"]])
-    ctrnt
+    ctrnm <- data.frame(ctry = ctrnt$ctry,
+                       name = map_chr(ctrnt$ctry, function(x) ctries[[sprintf("%s", x)]][["name"]]))
+    inner_join(ctrnm, ctrnt, by = "ctry")
 }
