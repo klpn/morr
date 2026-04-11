@@ -3,6 +3,7 @@
 export(capatplot)
 export(ctry_awsyplot)
 export(ctry_caf)
+export(thrctries)
 import(dplyr)
 import(ggplot2)
 import(jsonlite)

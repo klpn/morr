@@ -213,3 +213,24 @@ ce.expand <- function(ce, li) {
     }
     ce
 }
+
+#' Returns a data frame of countries with minimum and maximum years with a certain cause ratio over a threshold.
+#' @param caf Frame returned byt ctry_caf.
+#' @param thr Include countries with ca1/ca2 ≥ thr.
+#' @param nthr Include countres with ca2 ≥ nthr (to avoid small populations which can give very noisy results).
+#' @param tsex Sex to include.
+#' @param tage Age group to include.
+#' @examples
+#' circall <- ctry_caf("all", "circ", "all")
+#' circall |> thrctries(0.5, 200, 2, 1)
+#' @export
+thrctries <- function(caf, thr, nthr, tsex, tage) {
+    cafi <- caf |> filter(sex==tsex & age==tage & ca2 >= nthr)
+    ctrn <- cafi |> group_by(ctry) |>
+        summarise(count_all = n(), yr_min_all = min(yr), yr_max_all = max(yr))
+    ctrt <- cafi |> filter(ca1/ca2 >= thr) |> group_by(ctry) |>
+        summarise(count = n(), yr_min = min(yr), yr_max = max(yr))
+    ctrnt <- inner_join(ctrn, ctrt, by = "ctry")
+    ctrnt$name <- map_chr(ctrnt$ctry, function(x) ctries[[sprintf("%s", x)]][["name"]])
+    ctrnt
+}
