@@ -1,15 +1,127 @@
 {
+  "1010": {
+    "iso_a2": "DZ",
+    "name": "Algeria"
+  },
+  "1020": {
+    "iso_a2": "AO",
+    "name": "Angola"
+  },
+  "1025": {
+    "iso_a2": "BJ",
+    "name": "Benin"
+  },
+  "1030": {
+    "iso_a2": "BW",
+    "name": "Botswana"
+  },
+  "1035": {
+    "iso_a2": "BF",
+    "name": "Burkina Faso"
+  },
+  "1040": {
+    "iso_a2": "BI",
+    "name": "Burundi"
+  },
+  "1045": {
+    "iso_a2": "CM",
+    "name": "Cameroon"
+  },
   "1060": {
     "iso_a2": "CV",
     "name": "Cabo Verde"
+  },
+  "1070": {
+    "iso_a2": "CF",
+    "name": "Central African Republic"
+  },
+  "1080": {
+    "iso_a2": "TD",
+    "name": "Chad"
+  },
+  "1090": {
+    "iso_a2": "KM",
+    "name": "Comoros"
+  },
+  "1100": {
+    "iso_a2": "CG",
+    "name": "Congo"
+  },
+  "1115": {
+    "iso_a2": "CI",
+    "name": "Cote d'Ivoire"
+  },
+  "1120": {
+    "iso_a2": "DJ",
+    "name": "Djibouti"
   },
   "1125": {
     "iso_a2": "EG",
     "name": "Egypt"
   },
+  "1130": {
+    "iso_a2": "GQ",
+    "name": "Equatorial Guinea"
+  },
+  "1135": {
+    "iso_a2": "ER",
+    "name": "Eritrea"
+  },
+  "1140": {
+    "iso_a2": "ET",
+    "name": "Ethiopia"
+  },
+  "1160": {
+    "iso_a2": "GA",
+    "name": "Gabon"
+  },
+  "1170": {
+    "iso_a2": "GM",
+    "name": "Gambia"
+  },
+  "1180": {
+    "iso_a2": "GH",
+    "name": "Ghana"
+  },
+  "1190": {
+    "iso_a2": "GN",
+    "name": "Guinea"
+  },
+  "1192": {
+    "iso_a2": "GW",
+    "name": "Guinea-Bissau"
+  },
+  "1220": {
+    "iso_a2": "KE",
+    "name": "Kenya"
+  },
+  "1230": {
+    "iso_a2": "LS",
+    "name": "Lesohto"
+  },
+  "1240": {
+    "iso_a2": "LR",
+    "name": "Liberia"
+  },
   "1250": {
     "iso_a2": "LY",
     "name": "Libyan Arab Jamahiriya"
+  },
+  "1260": {
+    "iso_a2": "MG",
+    "name": "Madagascar"
+  },
+  "1270": {
+    "iso_a2": "MW",
+    "name": "Malawi"
+  },
+  "1280": {
+    "iso_a2": "ML",
+    "name": "Mali"
+  },
+  "1290": {
+    "iso_a2": "MR",
+    "name": "Mauritania"
   },
   "1300": {
     "iso_a2": "MU",
@@ -23,6 +135,22 @@
     "iso_a2": "MA",
     "name": "Morocco"
   },
+  "1320": {
+    "iso_a2": "MZ",
+    "name": "Mozambique"
+  },
+  "1325": {
+    "iso_a2": "NA",
+    "name": "Namibia"
+  },
+  "1330": {
+    "iso_a2": "NE",
+    "name": "Niger"
+  },
+  "1340": {
+    "iso_a2": "NG",
+    "name": "Nigeria"
+  },
   "1360": {
     "iso_a2": "RE",
     "name": "Reunion"
@@ -31,21 +159,73 @@
     "iso_a2": "MU-RO",
     "name": "Rodrigues"
   },
+  "1370": {
+    "iso_a2": "RW",
+    "name": "Rwanda"
+  },
   "1385": {
     "iso_a2": "ST",
     "name": "Sao Tome and Principe"
+  },
+  "1390": {
+    "iso_a2": "SN",
+    "name": "Senegal"
   },
   "1400": {
     "iso_a2": "SC",
     "name": "Seychelles"
   },
+  "1410": {
+    "iso_a2": "SL",
+    "name": "Sierra Leone"
+  },
+  "1420": {
+    "iso_a2": "SO",
+    "name": "Somalia"
+  },
   "1430": {
     "iso_a2": "ZA",
     "name": "South Africa"
   },
+  "1460": {
+    "iso_a2": "SS",
+    "name": "South Sudan"
+  },
+  "1465": {
+    "iso_a2": "SD",
+    "name": "Sudan"
+  },
+  "1470": {
+    "iso_a2": "SD",
+    "name": "Sudan (former)"
+  },
+  "1480": {
+    "iso_a2": "SZ",
+    "name": "Eswatini"
+  },
+  "1510": {
+    "iso_a2": "TG",
+    "name": "Togo"
+  },
   "1520": {
     "iso_a2": "TN",
     "name": "Tunisia"
+  },
+  "1530": {
+    "iso_a2": "UG",
+    "name": "Uganda"
+  },
+  "1546": {
+    "iso_a2": "TZ",
+    "name": "Tanzania"
+  },
+  "1555": {
+    "iso_a2": "CD",
+    "name": "Democratic Republic of the Congo"
+  },
+  "1560": {
+    "iso_a2": "ZM",
+    "name": "Zambia"
   },
   "1570": {
     "iso_a2": "ZW",
@@ -251,13 +431,29 @@
     "iso_a2": "VE",
     "name": "Venezuela"
   },
+  "3010": {
+    "iso_a2": "AF",
+    "name": "Afghanistan"
+  },
   "3020": {
     "iso_a2": "BH",
     "name": "Bahrain"
   },
+  "3025": {
+    "iso_a2": "BD",
+    "name": "Bangladesh"
+  },
+  "3027": {
+    "iso_a2": "BT",
+    "name": "Bhutan"
+  },
   "3030": {
     "iso_a2": "BN",
     "name": "Brunei Darussalam"
+  },
+  "3050": {
+    "iso_a2": "KH",
+    "name": "Cambodia"
   },
   "3068": {
     "iso_a2": "CN",
@@ -271,9 +467,21 @@
     "iso_a2": "CY",
     "name": "Cyprus"
   },
+  "3083": {
+    "iso_a2": "KP",
+    "name": "Democratic Peoples's Republic of Korea"
+  },
   "3090": {
     "iso_a2": "HK",
     "name": "Hong Kong SAR"
+  },
+  "3100": {
+    "iso_a2": "IN",
+    "name": "India"
+  },
+  "3110": {
+    "iso_a2": "ID",
+    "name": "Indonesia"
   },
   "3130": {
     "iso_a2": "IR",
@@ -299,6 +507,10 @@
     "iso_a2": "KW",
     "name": "Kuwait"
   },
+  "3200": {
+    "iso_a2": "LA",
+    "name": "Lao People's Democratic Republic"
+  },
   "3210": {
     "iso_a2": "LB",
     "name": "Lebanon"
@@ -322,6 +534,10 @@
   "3270": {
     "iso_a2": "MM",
     "name": "Myanmar"
+  },
+  "3280": {
+    "iso_a2": "NP",
+    "name": "Nepal"
   },
   "3283": {
     "iso_a2": "PS",
@@ -378,6 +594,14 @@
   "3405": {
     "iso_a2": "AE",
     "name": "United Arab Emirates"
+  },
+  "3408": {
+    "iso_a2": "VN",
+    "name": "Viet Nam"
+  },
+  "3420": {
+    "iso_a2": "YM",
+    "name": "Yemen"
   },
   "4005": {
     "iso_a2": "AL",
@@ -505,7 +729,7 @@
   },
   "4195": {
     "iso_a2": "MK",
-    "name": "TFYR Macedonia"
+    "name": "North Macedonia"
   },
   "4200": {
     "iso_a2": "MT",
@@ -623,6 +847,10 @@
     "iso_a2": "AU",
     "name": "Australia"
   },
+  "5060": {
+    "iso_a2": "CK",
+    "name": "Cook Islands"
+  },
   "5070": {
     "iso_a2": "FJ",
     "name": "Fiji"
@@ -631,17 +859,53 @@
     "iso_a2": "KI",
     "name": "Kiribati"
   },
+  "5107": {
+    "iso_a2": "MH",
+    "name": "Marshall Islands"
+  },
+  "5108": {
+    "iso_a2": "FM",
+    "name": " Micronesia (Federated States of)"
+  },
+  "5110": {
+    "iso_a2": "NR",
+    "name": "Nauru"
+  },
   "5150": {
     "iso_a2": "NZ",
     "name": "New Zealand"
+  },
+  "5170": {
+    "iso_a2": "NU",
+    "name": "Niue"
+  },
+  "5180": {
+    "iso_a2": "PW",
+    "name": "Palau"
   },
   "5195": {
     "iso_a2": "PG",
     "name": "Papua New Guinea"
   },
+  "5197": {
+    "iso_a2": "WS",
+    "name": "Samoa"
+  },
   "5198": {
     "iso_a2": "SB",
     "name": "Solomon Islands"
+  },
+  "5200": {
+    "iso_a2": "TO",
+    "name": "Tonga"
+  },
+  "5205": {
+    "iso_a2": "TV",
+    "name": "Tuvalu"
+  },
+  "5207": {
+    "iso_a2": "VU",
+    "name": "Vanuatu"
   },
   "SE": {
     "iso_a2": "SE",
