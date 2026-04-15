@@ -7,7 +7,7 @@
 thrctries(caf, thr, nthr, tsex, tage)
 }
 \arguments{
-\item{caf}{Frame returned byt ctry_caf.}
+\item{caf}{Frame returned by ctry_caf.}
 
 \item{thr}{Include countries with ca1/ca2 ≥ thr.}
 
@@ -15,7 +15,7 @@ thrctries(caf, thr, nthr, tsex, tage)
 
 \item{tsex}{Sex to include.}
 
-\item{tage}{Age group to include.}
+\item{tage}{Age groups to include.}
 }
 \description{
 Returns a data frame of countries with minimum and maximum years with a certain cause ratio over a threshold.
