@@ -4,7 +4,7 @@
 \alias{thrctries}
 \title{Returns a data frame of countries with minimum and maximum years with a certain cause ratio over a threshold.}
 \usage{
-thrctries(caf, thr, nthr, tsex, tage)
+thrctries(caf, thr, nthr, tsex, tage, agesum = TRUE)
 }
 \arguments{
 \item{caf}{Frame returned by ctry_caf.}
@@ -16,6 +16,8 @@ thrctries(caf, thr, nthr, tsex, tage)
 \item{tsex}{Sex to include.}
 
 \item{tage}{Age groups to include.}
+
+\item{agesum}{Sum the age groups in tage, and use the sums for the threshold values.}
 }
 \description{
 Returns a data frame of countries with minimum and maximum years with a certain cause ratio over a threshold.
