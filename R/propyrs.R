@@ -20,12 +20,15 @@ aw_y <- data.frame(age = 2:25,
 aw_c <- data.frame(age = 2:25,
                    age_w = c(rep(2,5), rep(3,2), rep(4,2), rep(5,2), rep(6,2), rep(7,4), rep(8,7)))
 aw0 <- data.frame(age = 2:25, age_w = 1)
+aw_hmd <- data.frame(age_who_25 = c(2:6, mapply(function(x) x %/% 5 + 6, 5:94), rep(25,16)),
+                     age_hmd = 0:110)
 agelabs_w <- c(agelabs[1], "0–14", "15–44", agelabs[15:25])
 agelabs_w_m <- c(agelabs[1], "0–34", "35–44", agelabs[15:25])
 agelabs_w_o <- c(agelabs[1], "0–44", agelabs[15:25])
 agelabs_w_y <- c(agelabs[1], "0–14", "15–24", "25–34", "35–44", "45–64", "65–ω")
 agelabs_w_c <- c(agelabs[1], "0–4", "5–14", "15–24", "25–34", "35–44", "45–64", "65–ω")
 sexlabs <- c("men", "women")
+hmdsexes <- c("male", "female")
 
 awjoin <- function(caframe, awframe) {
     caf0 <- filter(caframe, age > 1) |>
@@ -212,6 +215,32 @@ ce.expand <- function(ce, li) {
         ce <- ce.expand(gsub(sprintf("<%s>", ca), cae, ce), li)
     }
     ce
+}
+
+hmdltf <- function(sex) {
+    hmdsex <- hmdsexes[sex]
+    hs <- substr(hmdsex, 1, 1)
+    hmdpath <- sprintf("%s/hmd/lt_%s/%sltper_1x1/%sltper_1x1.txt", datapath, hmdsex, hs, hs)
+    hltf <- read.table(pipe(sprintf("sed 's/110+/110/' %s", hmdpath)),
+                       skip = 2, na.strings = ".", header = TRUE) |> rename(yr = Year)
+    hltf$dx <- hltf$dx / 1e5
+    hltf$lx <- hltf$lx / 1e5
+    hltf
+}
+
+hmdltfs <- function() {
+    hltfs <- bind_rows(hmdltf(1), hmdltf(2), .id = "sex")
+    hltfs$sex <- as.numeric(hltfs$sex)
+    hltfs
+}
+
+cahmdltf <- function(caf, hltf) {
+    caf_ageh <- caf |> inner_join(aw_hmd, by = c("age" = "age_who_25"), relationship = "many-to-many")
+    cahltf <- inner_join(hltf, caf_ageh, by = join_by(sex, yr, closest(Age >= age_hmd))) |>
+        group_by(yr, sex) |>
+        mutate(cadx = dx * (ca1/ca2), cadx_sum = cadx |> rev() |> cumsum() |> rev(),
+               caldx = cadx_sum/lx) |> select(!(matches("age_who")))
+    cahltf
 }
 
 #' Returns a data frame of countries with minimum and maximum years with a certain cause ratio over a threshold.
