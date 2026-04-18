@@ -4,12 +4,15 @@
 \alias{capatplot}
 \title{Plots cause of death pattern for a region over time}
 \usage{
-capatplot(ag, ctry, cas, aws = NA, alabs = agelabs, ca2 = "all")
+capatplot(ag, ctry, cas, hltf = NA, aws = NA, alabs = agelabs, ca2 = "all")
 }
 \arguments{
 \item{ctry}{WHO region code (use "all" for all regions).}
 
 \item{cas}{Vector of cause codes.}
+
+\item{hltf}{Data frame in the format returned by hmdltfs.
+If defined, plot expected proportion of deaths (the caldx column) for someone at age ag.}
 
 \item{aws}{Data frame with age groups for aggregation.
 The standard frame "aw" is suited for causes related to aging, with higher age groups fine-grained.
@@ -18,6 +21,8 @@ The frame "aw_y" is suited for causes commong among young adults, like HIV and e
 \item{alabs}{Vector with labels of the same length as the age groups.}
 
 \item{ca2}{Denominator cause (use "pop" for population to get death rates).}
+
+\item{age}{Age group.}
 }
 \description{
 Plots cause of death pattern for a region over time

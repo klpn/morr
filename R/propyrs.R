@@ -167,9 +167,12 @@ awsyplot <- function(caframe, rlab, ca1lab, ca2lab, fwscales, ycol, aws, alabs) 
 }
 
 #' Plots cause of death pattern for a region over time
-#' 
+#'
+#' @param age Age group.
 #' @param ctry WHO region code (use "all" for all regions).
 #' @param cas Vector of cause codes.
+#' @param hltf Data frame in the format returned by hmdltfs.
+#'   If defined, plot expected proportion of deaths (the caldx column) for someone at age ag.
 #' @param aws Data frame with age groups for aggregation.
 #'   The standard frame "aw" is suited for causes related to aging, with higher age groups fine-grained.
 #'   The frame "aw_y" is suited for causes commong among young adults, like HIV and external causes.
@@ -180,31 +183,46 @@ awsyplot <- function(caframe, rlab, ca1lab, ca2lab, fwscales, ycol, aws, alabs) 
 #' "chresp", "inf", "othdis", "illdef", "ext", "tum")
 #' capatplot(1, 4290, capat)
 #' @export
-capatplot <- function(ag, ctry, cas, aws = NA, alabs = agelabs, ca2 = "all") {
+capatplot <- function(ag, ctry, cas, hltf = NA, aws = NA, alabs = agelabs, ca2 = "all") {
     ctrylab <- ctries[[as.character(ctry)]][["name"]]
     cas.list <- list()
     if (is.data.frame(aws)) {
         agcol <- sym("age_w")
+        alab <- sprintf("age %s", alabs[ag])
+    } else if (is.data.frame(hltf)) {
+        agcol <- sym("Age")
+        hltf_ctry <- hltf |> filter(PopName == ctries[[sprintf("%s", ctry)]][["iso_a3"]])
+        alab <- sprintf("expected at age %s", ag)
     } else {
         agcol <- sym("age")
+        alab <- sprintf("age %s", alabs[ag])
     }
     calabs <- c()
     ca2lab <- miconf[["causes"]][[ca2]][["alias"]][["en"]]
     for (cind in seq_along(cas)) {
         ca <- cas[cind]
-        caf <- ctry_caf(ctry, ca, ca2)
-        caf$rat <- caf$ca1 / caf$ca2
-        if (is.data.frame(aws)) caf <- awjoin(caf, aws)
+        if (is.data.frame(hltf)) {
+            caf0 <- ctry_caf(ctry, ca, ca2)
+            caf <- cahmdltf(caf0, hltf_ctry)
+            caf$rat <- caf$caldx
+        } else {
+            caf <- ctry_caf(ctry, ca, ca2)
+            caf$rat <- caf$ca1 / caf$ca2
+            if (is.data.frame(aws)) caf <- awjoin(caf, aws)
+        }
         cas.list[[sprintf("%02d",cind)]] <- caf
         calabs <- append(calabs, miconf[["causes"]][[ca]][["alias"]][["en"]])
     }
-    cas.frame <- bind_rows(cas.list, .id="ca")
-    cas.frame |> filter(!!agcol == ag & sex < 9) |>
-        complete(ca, yr, age, sex, fill = list(ca1 = 0, ca2 = 1, rat = 0.0)) |>
+    cas.frame <- bind_rows(cas.list, .id="ca") |> filter(!!agcol == ag & sex < 9)
+    if (!is.data.frame(hltf)) {
+        cas.frame <- cas.frame |>
+            complete(ca, yr, age, sex, fill = list(ca1 = 0, ca2 = 1, rat = 0.0))
+    }
+    cas.frame |>
         ggplot(aes(x = yr, y = rat, fill = factor(ca, labels = calabs))) +
         geom_area(col="black", alpha=0.5) +
         labs(fill = "cause", x = "year", y = sprintf("deaths cause/%s", ca2lab),
-             title = sprintf("Causes of death %s age %s", ctrylab, alabs[ag])) +
+             title = sprintf("Causes of death %s %s", ctrylab, alab)) +
         facet_wrap(~factor(sex, labels = sexlabs))
 }
 
