@@ -214,10 +214,7 @@ capatplot <- function(ag, ctry, cas, hltf = NA, aws = NA, alabs = agelabs, ca2 =
         calabs <- append(calabs, miconf[["causes"]][[ca]][["alias"]][["en"]])
     }
     cas.frame <- bind_rows(cas.list, .id="ca") |> filter(!!agcol == ag & sex < 9)
-    if (!is.data.frame(hltf)) {
-        cas.frame <- cas.frame |>
-            complete(ca, yr, age, sex, fill = list(ca1 = 0, ca2 = 1, rat = 0.0))
-    }
+    cas.frame <- cas.frame |> complete(ca, yr, !!agcol, sex, fill = list(ca1 = 0, ca2 = 1, rat = 0.0))
     cas.frame |>
         ggplot(aes(x = yr, y = rat, fill = factor(ca, labels = calabs))) +
         geom_area(col="black", alpha=0.5) +
@@ -257,7 +254,8 @@ cahmdltf <- function(caf, hltf) {
     cahltf <- inner_join(hltf, caf_ageh, by = join_by(sex, yr, closest(Age >= age_hmd))) |>
         group_by(yr, sex) |>
         mutate(cadx = dx * (ca1/ca2), cadx_sum = cadx |> rev() |> cumsum() |> rev(),
-               caldx = cadx_sum/lx) |> select(!(matches("age_who")))
+               caldx = cadx_sum/lx) |> select(!(matches("age_who"))) |>
+        ungroup()
     cahltf
 }
 
