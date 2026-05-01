@@ -410,6 +410,50 @@
             },
             "sex": [2,1]
         },
+        "senility": {
+            "alias": {
+                "en": "senility",
+                "sv": "senilitet"
+            },
+            "causeexpr": {
+                "07A": "A136",
+                "08A": "A136",
+                "09B": "B465",
+                "10": "R54",
+                "10SE": "R54"
+            },
+            "codedesc": {
+                "en": "ICD-6/7/8: 794; ICD-9: 797; ICD-10: R54",
+                "sv": "ICD-6/7/8: 794; ICD-9: 797; ICD-10: R54"
+            },
+            "note": {
+                "en": "Old age without mention of dementia.",
+                "sv": "Hög ålder utan uppgift om demens."
+            },
+            "sex": [2,1]
+        },
+        "illdefnos": {
+            "alias": {
+                "en": "ill-defined cause (non-senility)",
+                "sv": "illa definierade orsaker (utom senilitet)"
+            },
+            "causeexpr": {
+                "07A": "A137",
+                "08A": "A137",
+                "09B": "B46[^5]",
+                "10": "<illdef>!<senility>",
+                "10SE": "<illdef>!<senility>"
+            },
+            "codedesc": {
+                "en": "ICD-6/7/8/9: 780--799; ICD-10: R00--R99, except for senility as defined",
+                "sv": "ICD-6/7/8: 794; ICD-9: 797; ICD-10: R54, utom senilitet som definierat"
+            },
+            "note": {
+                "en": "Ill-defined causes except for senility.",
+                "sv": "Illa definierade orsaker utom senilitet."
+            },
+            "sex": [2,1]
+        },
         "respinf": {
             "alias": {
                 "en": "respiratory infections/covid-19",
