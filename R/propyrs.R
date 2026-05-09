@@ -191,7 +191,11 @@ capatplot <- function(ag, ctry, cas, hltf = NA, aws = NA, alabs = agelabs, ca2 =
         alab <- sprintf("age %s", alabs[ag])
     } else if (is.data.frame(hltf)) {
         agcol <- sym("Age")
-        hltf_ctry <- hltf |> filter(PopName == ctries[[sprintf("%s", ctry)]][["iso_a3"]])
+        if ("hmd" %in% names(ctries[[as.character(ctry)]]))
+            hmdcode <- ctries[[as.character(ctry)]][["hmd"]]
+        else
+            hmdcode <- ctries[[as.character(ctry)]][["iso_a3"]]
+        hltf_ctry <- hltf |> filter(PopName == hmdcode)
         alab <- sprintf("expected at age %s", ag)
     } else {
         agcol <- sym("age")

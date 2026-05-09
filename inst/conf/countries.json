@@ -827,7 +827,8 @@
   "4080": {
     "iso_a2": "FR",
     "name": "France",
-    "iso_a3": "FRA"
+    "iso_a3": "FRA",
+    "hmd": "FRATNP"
   },
   "4084": {
     "iso_a2": "GE",
@@ -837,16 +838,19 @@
   "4085": {
     "iso_a2": "DE",
     "name": "Germany",
-    "iso_a3": "DEU"
+    "iso_a3": "DEU",
+    "hmd": "DEUTNP"
   },
   "4090": {
     "iso_a2": "DD",
-    "name": "Germany, Former Democratic Republic"
+    "name": "Germany, Former Democratic Republic",
+    "hmd": "DEUTE"
   },
   "4100": {
     "iso_a2": "DE",
     "name": "Germany, Former Federal Republic",
-    "iso_a3": "DEU"
+    "iso_a3": "DEU",
+    "hmd": "DEUTW"
   },
   "4120": {
     "iso_a2": "",
@@ -1014,19 +1018,23 @@
   "4308": {
     "iso_a2": "GB",
     "name": "United Kingdom",
-    "iso_a3": "GBR"
+    "iso_a3": "GBR",
+    "hmd": "GBR_NP"
   },
   "4310": {
     "iso_a2": "GB-EAW",
-    "name": "United Kingdom, England and Wales"
+    "name": "United Kingdom, England and Wales",
+    "hmd": "GBRTENW"
   },
   "4320": {
     "iso_a2": "GB-NIR",
-    "name": "United Kingdom, Northern Ireland"
+    "name": "United Kingdom, Northern Ireland",
+    "hmd": "GBR_NIR"
   },
   "4330": {
     "iso_a2": "GB-SCT",
-    "name": "United Kingdom, Scotland"
+    "name": "United Kingdom, Scotland",
+    "hmd": "GBR_SCO"
   },
   "4335": {
     "iso_a2": "UZ",
@@ -1079,7 +1087,8 @@
   "5150": {
     "iso_a2": "NZ",
     "name": "New Zealand",
-    "iso_a3": "NZL"
+    "iso_a3": "NZL",
+    "hmd": "NZL_NP"
   },
   "5170": {
     "iso_a2": "NU",
