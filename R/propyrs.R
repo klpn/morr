@@ -256,11 +256,16 @@ hmdltfs <- function() {
 cahmdltf <- function(caf, hltf) {
     caf_ageh <- caf |> inner_join(aw_hmd, by = c("age" = "age_who_25"), relationship = "many-to-many")
     cahltf <- inner_join(hltf, caf_ageh, by = join_by(sex, yr, closest(Age >= age_hmd))) |>
-        group_by(yr, sex) |>
-        mutate(cadx = dx * (ca1/ca2), cadx_sum = cadx |> rev() |> cumsum() |> rev(),
-               caldx = cadx_sum/lx) |> select(!(matches("age_who"))) |>
-        ungroup()
+        group_by(yr, sex) |> calife() |> ungroup()
     cahltf
+}
+
+calife <- function(df) {
+    df <- df |> mutate(camx = mx * rat, cadx = dx * rat,
+                       cadx_sum = cadx |> rev() |> cumsum() |> rev(),
+                       caldx = cadx_sum/lx) |>
+        select(!(matches("age_who")))
+    df
 }
 
 #' Returns a data frame of countries with minimum and maximum years with a certain cause ratio over a threshold.
