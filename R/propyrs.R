@@ -15,6 +15,8 @@ agelabs <- c("0–ω", "0", "1", "2", "3", "4",
 aw <- data.frame(age = 2:25, age_w = c(rep(2,7), rep(3,6), 4:14))
 aw_m <- data.frame(age = 2:25, age_w = c(rep(2,11), rep(3,2), 4:14))
 aw_o <- data.frame(age = 2:25, age_w = c(rep(2,13), 3:13))
+aw_oo <- data.frame(age = 2:25, age_w = c(rep(2,17), 3:9))
+aw_ooo <- data.frame(age = 2:25, age_w = c(rep(2,19), 3:7))
 aw_y <- data.frame(age = 2:25,
                    age_w = c(rep(2,7), rep(3,2), rep(4,2), rep(5,2), rep(6,4), rep(7,7)))
 aw_c <- data.frame(age = 2:25,
@@ -25,6 +27,8 @@ aw_hmd <- data.frame(age_who_25 = c(2:6, mapply(function(x) x %/% 5 + 6, 5:94), 
 agelabs_w <- c(agelabs[1], "0–14", "15–44", agelabs[15:25])
 agelabs_w_m <- c(agelabs[1], "0–34", "35–44", agelabs[15:25])
 agelabs_w_o <- c(agelabs[1], "0–44", agelabs[15:25])
+agelabs_w_oo <- c(agelabs[1], "0–64", agelabs[19:25])
+agelabs_w_ooo <- c(agelabs[1], "0–74", agelabs[21:25])
 agelabs_w_y <- c(agelabs[1], "0–14", "15–24", "25–34", "35–44", "45–64", "65–ω")
 agelabs_w_c <- c(agelabs[1], "0–4", "5–14", "15–24", "25–34", "35–44", "45–64", "65–ω")
 sexlabs <- c("men", "women")
