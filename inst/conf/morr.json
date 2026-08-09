@@ -685,6 +685,29 @@
             },
             "sex": [2,1]
         },
+        "mm": {
+            "alias": {
+                "en": "malignant melanoma",
+                "sv": "malignt melanom"
+            },
+            "causeexpr": {
+                "07A": "190",
+                "08A": "172$",
+                "09B": "B111",
+                "10": "C43",
+                "10SE": "C43",
+                "101": "1035"
+            },
+            "codedesc": {
+                "en": "ICD-6/7: 190; ICD-8/9: 172; ICD-10: C43",
+                "sv": "ICD-6/7: 190; ICD-8/9: 172; ICD-10: C43"
+            },
+            "note": {
+                "en": "Includes melanoma and other skin cancer.",
+                "sv": "Inkluderar malignt melanom och annan hudcancer."
+            },
+            "sex": [2,1]
+        },
         "neurdeg": {
             "alias": {
                 "en": "dementia/neurodegenerative disease",
@@ -964,6 +987,29 @@
             "note": {
                 "en": "Includes stomach cancer.",
                 "sv": "Inkluderar cancer i magsäck."
+            },
+            "sex": [2,1]
+        },
+        "skc": {
+            "alias": {
+                "en": "skin cancer",
+                "sv": "hudcancer"
+            },
+            "causeexpr": {
+                "07A": "A055",
+                "08A": "A053",
+                "09B": "B11[12]",
+                "10": "C4[34]",
+                "10SE": "C4[34]",
+                "101": "1035"
+            },
+            "codedesc": {
+                "en": "ICD-6/7: 190, 191; ICD-8: 172, 173; ICD-9: 172, 173; ICD-10: C43–C44",
+                "sv": "ICD-6/7/8/9: 172, 173; ICD-10: C43–C44"
+            },
+            "note": {
+                "en": "Includes melanoma and other skin cancer.",
+                "sv": "Inkluderar malignt melanom och annan hudcancer."
             },
             "sex": [2,1]
         },
