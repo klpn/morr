@@ -478,6 +478,29 @@
             },
             "sex": [2,1]
         },
+        "influenza": {
+            "alias": {
+                "en": "influenza",
+                "sv": "influensa"
+            },
+            "causeexpr": {
+                "07A": "A088",
+                "08A": "A090",
+                "09B": "B322",
+                "10": "J(09|1[01])",
+                "10SE": "J(09|1[01])",
+                "101": "1073"
+            },
+            "codedesc": {
+                "en": "ICD-6/7: 480--483; ICD-8: 470--474; ICD-9: 487; ICD-10: J09--J11",
+                "sv": "ICD-6/7: 480--483; ICD-8: 470--474; ICD-9: 487; ICD-10: J09--J11"
+            },
+            "note": {
+                "en": "Includes influenza. Often underreported as underlying cause relative to the excess mortaliy it causes.",
+                "sv": "Inkluderar influensa. Ofta underraporterad som underliggande dödsorsak relativt den överdödlighet den orsakar."
+            },
+            "sex": [2,1]
+        },
         "covid": {
             "alias": {
                 "en": "covid-19",
