@@ -53,6 +53,42 @@
             },
             "sex": [2,1]
         },
+        "ath": {
+            "alias": {
+                "en": "atherosclerosis",
+                "sv": "ateroskleros"
+            },
+            "causeexpr": {
+                "10": "<athhd>|I672|I70"
+            },
+            "codedesc": {
+                "en": "ICD-10: I250, I251, I672, I70",
+                "sv": "ICD-10: I250, I251, I672, I70"
+            },
+            "note": {
+                "en": "Includes codes with explicit reference to atherosclerosis (from ICD-10).",
+                "sv": "Inkluderar koder med explicit referens till ateroskleros (från ICD-10)."
+            },
+            "sex": [2,1]
+        },
+        "athhd": {
+            "alias": {
+                "en": "atherosclerotic heart disease",
+                "sv": "aterosklerotisk hjärtsjukdom"
+            },
+            "causeexpr": {
+                "10": "I25[01]"
+            },
+            "codedesc": {
+                "en": "ICD-10: I250, I251",
+                "sv": "ICD-10: I250, I251"
+            },
+            "note": {
+                "en": "Includes atherosclerotic heart disease (from ICD-10).",
+                "sv": "Inkluderar aterosklerotisk hjärtsjukdom (från ICD-10)."
+            },
+            "sex": [2,1]
+        },
         "bc": {
             "alias": {
                 "en": "breast cancer",
